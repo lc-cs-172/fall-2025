@@ -3,9 +3,11 @@ accessible set of answers.
 
 1a) What is your preferred name?
 
-1b) How do you pronounce your preferred name?  Please use a phonetic
-    spelling and/or a "rhymes with" description; e.g., for me, it's
-    skud'-lark, or rhymes with spud-lark (potato-bird).
+1b) How do you pronounce your preferred name?
+
+    Please use a phonetic spelling and/or a "rhymes with" description;
+    e.g., for me, it's skud'-lark, or rhymes with spud-lark
+    (potato-bird).
 
 2) What are your preferred pronouns?
 
@@ -19,11 +21,13 @@ accessible set of answers.
 
 7) What concerns, if any, do you have about this class?
 
-8) Have you read the syllabus?
+8) Have you read the syllabus (available at the top of our GitHub site)?
 
 9) What is the reference cited in the Pythonorama Development Tools ->
 Command Line topic summary?
 
-10) What else, if anything, do you want to mention?
+10) What is the answer to this survey question from our Google Group?
+
+11) What else, if anything, do you want to mention?
 
 []
