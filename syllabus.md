@@ -7,40 +7,43 @@ CS-172, Section 01
 Monday/Wednesday/Friday 10:20-11:20 AM  
 Olin 305
 
-**Google Classroom:** We'll use Google Classroom throughout the semester to
-share assignment due dates, details about exams, and track your grade.  You'll
-submit your work there.
+**Google Classroom:** We'll use [Google Classroom](https://classroom.google.com)
+throughout the semester to share assignment due dates, reminders about exams,
+and track your grade.  You'll submit your work there.
 
 **GitHub:** We'll use
-[lc-cs-172/fall-2025](https://github.com/lc-cs-172/fall-2025) read-only, to
-share notes, activities, and assignment details with you.
+[lc-cs-172/fall-2025](https://github.com/lc-cs-172/fall-2025) to share notes,
+activities, and assignment details with you.
 
-**Pythonorama:** We'll also refer to
+**Pythonorama:** We'll often refer to
 [Pythonorama](https://github.com/alainkaegi/pythonorama#pythonorama) for info on
 class-related topics, and helpful study (and test) questions.
 
 **Microsoft Visual Studio Code:** We'll use both interactive Python sessions and
 [Visual Studio Code](https://github.com/alainkaegi/pythonorama/blob/main/development_tools/vs_code.md)
 throughout the semester for live coding sessions.  If you have never used an
-integrated developing environment (IDE), I would recommend that you use this
-one.  It is installed on the computers in Olin 305.  It is relatively easy to
+integrated developing environment (IDE), I recommend that you use this one.  It
+is installed on the computers in Olin 305.  It is relatively easy to
 [install](https://github.com/alainkaegi/pythonorama/blob/main/development_tools/vs_code.md)
 on your computer. If you run into issues, talk to the instructor, the TA, or
 Jorge, the lab administrator.
 
 ## Teacher Information
 
-Instructor: Joseph P. SKUDLAREK  
-Email:      jskudlarek@lclark.edu  
-Office hours:  
-location TBD  
-Mondays 9:10 - 10:10 AM  
-Fridays 9:10 - 10:10 AM  
-and by appointment
+	Instructor	| Joseph P. SKUDLAREK
+	Email		| jskudlarek@lclark.edu
+	Office hours|
+				| location SQRC (JR Howard 134)
+				| Mondays 9:00-10:00 AM
+				| Fridays 9:00-10:00 AM
+				| and by appointment
 
-TA: Samphasnearyroth (Nero) Chua  
-Email: samphasnearyrothc@lclark.edu  
-Office hours: TBA
+	TA			| Samphasnearyroth (Nero) Chua
+	Email		| samphasnearyrothc@lclark.edu
+	Office hours| 
+				| location TBD
+				| Tues+Wed 5:00-6:00 PM (tentative)
+
 
 ## Why We're Here
 
@@ -52,13 +55,22 @@ science fundamentals.  But it's a shared responsibility.  I can teach you, but I
 can't do the learning for you -- you have to put in the effort to participate
 and to learn.
 
+## Q1/ Why is this syllabus so long?
+
+A1/ There's a bunch of stuff you should know and this is a good place for it.
+And I started with a great base written by Prof. Alain Kägi.
+
+## Q2/ Why is this syllabus so formal?
+
+A2/ Clarity is a virtue, so I tried to be clear.  I'm not always this detailed.
+
 ## Class is in-Person
 
 We are here to learn, IRL, together.  Please, come to class.  It's the best way
 to learn at college, and a helpful means for me to assess your engagement and
 progress.  But if you're sick, please stay home; if you feel ill during class,
 please leave quietly.  Masks are welcome.  When you come to class, please be
-present -- put away your phones, put away your distractions; turn your attenton
+present -- put away your phones, put away your distractions; turn your attention
 to listening, learning, and *participating* in *your* educational journey.
 
 ## Course Description
@@ -74,33 +86,38 @@ already know how to program in a conventional programming language.
 
 ## Course Goals
 
-My primary goal is to meet each of you where you are, and help you succeed in
-CS-172.  Each of you is an individual -- you are unique, and
-I appreciate, encourage, and respect that.
+My primary goal is for us to have FUN! while learning the beauty, elegance,
+importance, and practicality of computer science fundamentals, to meet each of
+you where you are and help you all succeed in CS-172.  Our goals are common,
+while the paths are many -- you are unique, and I appreciate, encourage, and
+respect that. I'm happy to adjust my approach to facilitate your learning.  Talk
+to me -- let me know what's working, and what's not working, for you.
 
-One goal is to teach essential programming concepts not already covered in
-CS-171.  These include recursion, object-oriented programming, and inheritance.
+Other coarse goals include the following.
 
-Another primary goal is to cover many foundational data structures and
-algorithms, such as arrays, linked lists, stacks, queues, searching, and
-sorting.
+* Teach essential programming concepts not already covered in CS-171.  These
+include recursion and object-oriented programming (both composition and
+inheritance).
 
-A third goal is to introduce techniques to analyze the performance of these data
-structures and algorithms.  In particular, these techniques will give us ways to
-evaluate the relative performance of various algorithms and data structures.
+* Cover many foundational data structures and algorithms, such as arrays, linked
+lists, stacks, queues, graphs, searching, and sorting.
 
-A fourth goal is to introduce software development best practices, including
-unit testing.  Computer Programming is both an art and a science.
+* Introduce techniques to analyze the performance of these data structures and
+algorithms.  In particular, these techniques will give us ways to evaluate the
+relative performance of various algorithms and data structures.
 
-A fifth goal is to give you practice and feedback on writing larger, more
-sophisticated programs, using functional decomposition and modularity, with an
-emphasis on clarity, communication, and other best programming practices.
+* Introduce software development best practices, including unit testing and
+version control.
 
-And one more goal is to help you learn how to work in a collaborative
-environment.  There will be pair programming and group exercises.
+* Give you practice and feedback on writing larger, more sophisticated programs,
+using functional decomposition and modularity, with an emphasis on clarity,
+communication, and best programming practices.
+
+* Help you learn how to work in a collaborative environment.  There will be pair
+programming and group exercises.
 
 This class is *not* about the nuts and bolts of programming in Python.  This
-class *is* about learning _how_ to program, in general.  We use Python3 for our
+class *is* about learning _how_ to program, in general.  We use Python 3 for our
 programming activities.  But the skills you'll learn and practice in this class
 are applicable to most other programming languages.
 
@@ -117,13 +134,25 @@ analysis, and honest assessment.
 To help you learn these skills, I may, in some activities and programming
 assignments, explicitly forbid you to use some specific features of Python.
 
+## AI policy
+
 We're here to learn what works, how and why it works.  We're not here to
 cut-and-paste some cookbook or AI generated solutions.  AI is allowed as a
-resource.  Like any resource, it must be credited if used in your work.  AI
-generated answers or code are **not acceptable** as *your* work in this course --
-all the work you turn in must be of your own creation, with clear citations for
-any references you use.  You must understand and be able to explain what you
-submit.
+resource.  Like any resource, it must be credited if used in your work.
+
+AI generated answers or code are **not acceptable** as *your* work in this
+course -- all the work you turn in must be of your own creation, with clear
+citations for any references you use.  You must understand and be able to
+explain what you submit.
+
+Besides the usual caution that AI can be wrong (in my recent experience with
+topics from this course, it is often wrong), please realize that using AI to do
+the course work is doing yourself a disservice.  You don't learn if someone or
+something is doing the work for you.  You learn by working at it, trying to
+solve it yourself, having _your_ brain figure it out, and thereby making your
+personal neurological connections.  Learning the fundamentals is also how you
+build the ability to judge the validity of AI results.
+
 
 ## Learning Outcomes
 
@@ -137,28 +166,29 @@ conventions.
 and existing libraries.
 3. Solve computational problems using recursion.
 4. Use, implement, explain, and compare various data structures and algorithms.
-Data structures may include arrays, lists, graphs, stacks, and queues.
-Implementations include array-based and reference-based versions.
+
+    Data structures may include arrays, lists, graphs, stacks, and queues.
+    Implementations include array-based and reference-based versions.
+
 5. Write unit tests.
 
-## Office Hours and Accessibility and Interaction
+## Office Hours, Accessibility, and Interaction
 
 I more than hope you will visit me throughout the term, so I can learn more
-about your interests, answer your questions, and normalize talking with your
-instructors.  Office hours are _obligatory_ -- they are a key part of your
+about your interests, answer your questions, and we can normalize talking with
+your instructors.  Office hours are _obligatory_ -- they are a key part of your
 participation grade.  You may bring a friend.  No appointment is necessary to
-see me during office hours; simply stop by Monday or Friday before class; or make
-an appointment by contacting me at jskudlarek@lclark.edu.
+see me during office hours; simply stop by Monday or Friday before class; or
+make an appointment by contacting me at jskudlarek@lclark.edu.
 
 I encourage interaction, both inside and outside the classroom.  Feel free to
 chat with me when we're on campus.
 
 ## Contact Methods and Timing
 
-My preferred contact methods are in-class, office hours, and email.  I will
-also be monitoring our Google Classroom.  My normal work hours are MWF between 9
-AM and 5 PM, and you can expect a response from me by the end of the next class
-day.
+My preferred contact methods are in-class, office hours, and email.  I will also
+be monitoring our Google Classroom.  My normal work hours are MWF between 9 AM
+and 1 PM; you can expect a response from me by the end of the next class day.
 
 ## Assignments
 
@@ -167,8 +197,8 @@ our class GitHub repo, and assignments are submitted through our Google
 Classroom.  Assignments are designed to help you master and apply what we are
 learning in class.  **Assignments are due on Friday at 11:59 PM of the week they
 are due.** Points will be taken off if submitted late; in some cases, late
-assignments will not receive any credit.  Simple assignments are usually due in
-about a week.  More involved assignments will usually have 2 weeks to complete.
+assignments will not receive any credit.  Simple assignments are due in about a
+week.  More involved assignments will have about 2 weeks to complete.
 
 ## Late Policy
 
@@ -226,8 +256,8 @@ midterms might have 10 questions each; the final could have 20 questions.  Each
 midterm will cover all the preceding material, the final is comprehensive.
 
 The exams are closed-book pen-and-paper tests given in the classroom.  Each exam
-might draw from a number of one-star and two-star questions from the Questions
-and Answers sections of relevant pages in
+will include a number of one-star and two-star questions from the Questions and
+Answers sections of relevant pages in
 [Pythonorama](https://github.com/alainkaegi/pythonorama#pythonorama).
 
 ## Helpful Tips
@@ -251,9 +281,9 @@ and credit all your sources.
 **Get to know your teacher.** Please feel free to stop by early in the semester,
 and stop by often.  Really.  That's **why I'm here** -- not only to answer your
 questions about the lectures and the assignments, but also to engage in
-conversation about computer science, working in industry, and other questions you may have.
-I love interacting with students -- you are primary participants in our shared
-learning.
+conversation about computer science, working in industry, and other questions,
+big or small, that you may have.  I love interacting with students -- you are
+primary participants in our shared learning.
 
 ## High-level Schedule
 
@@ -298,16 +328,22 @@ At that point, you will need to complete the course and take whatever grade you
 have earned.  If you have questions or concerns about your performance in the
 course, please talk with me well before Friday 07-Nov-2025.
 
-**Academic Integrity.** Academic integrity is an essential part of learning and
-scholarship. Integrity failures (e.g., plagiarism, cheating, the deliberate
-misrepresentation of information) are reason enough to **fail** this
-course. Period. Please avoid any behavior that may be reasonably viewed as
-suspicious. Remember that helping a classmate to cheat counts as cheating.  You
-need to cite all your sources.  If you have any questions about the use of
-generative AI technology (e.g., ChatGPT) or plagiarism boundaries or about what
-type of material you can access while working on an assignment, please see me
-before you turn in your work.  If you have any questions or concerns about
-academic honesty, please come see me or refer to Lewis & Clark's
+**Academic Integrity.** Academic integrity is an essential part of ethical and
+high quality learning and scholarship. Integrity failures (e.g., plagiarism,
+cheating, the deliberate misrepresentation of information) are reason enough to
+**fail** this course. Period.
+
+Again, we're not here to have you cut-and-paste ML output and claim it as your
+own -- doing so is plainly wrong, it is antithetical to responsible scholarship
+and learning, and is unacceptable.
+
+Please avoid any behavior that may be reasonably viewed as suspicious. Remember
+that helping a classmate to cheat counts as cheating.  You need to cite all your
+sources.  If you have any questions about the use of generative AI technology
+(e.g., ChatGPT) or plagiarism boundaries or about what type of material you can
+access while working on an assignment, please see me before you turn in your
+work.  If you have any questions or concerns about academic honesty, please come
+see me or refer to Lewis & Clark's
 [Academic Integrity Policy](https://docs.lclark.edu/undergraduate/policiesprocedures/academicintegrity/).
 
 **Other.** All college policies govern this course.  Please see the
@@ -326,10 +362,10 @@ for the availability of tutors assigned to this class; or just come on by! No
 appointment needed.
 
 **SAAB**
-[SAAB tutoring](https://college.lclark.edu/academics/support/saab-tutoring/)
-is also available.  One-on-one peer tutors are available for a range of courses
+[SAAB tutoring](https://college.lclark.edu/academics/support/saab-tutoring/) may
+also be available.  One-on-one peer tutors are available for a range of courses
 across departments.  Request to be connected with a SAAB tutor if needed.
-Students are eligible to receive two hours of tutoring per course each week. 
+Students are eligible to receive two hours of tutoring per course each week.
 
 ## L&C CS Resource
 
@@ -340,17 +376,19 @@ pages.
 
 ## Academic Resources
 
-* [Writing Center](https://college.lclark.edu/academics/support/writing_center/)
+* [Academic Support and Resources Trailhead](https://college.lclark.edu/academics/support/)
+* [College Advising Center](https://college.lclark.edu/academics/support/advising/)
 * [Library staff](https://library.lclark.edu/help/)
 * [Office of Student Accessibility](https://www.lclark.edu/offices/student-accessibility/)
-* [Symbolic and Quantitative Resource Center (SQRC)](https://college.lclark.edu/departments/mathematical_sciences/sqrc/)
-* [SAAB tutoring](https://college.lclark.edu/academics/support/saab-tutoring/)
-* [The Interactive Learning Center (ILC)](https://college.lclark.edu/offices/interactive_learning_center/) (assistance with language learning) 
-* [College Advising Center](https://college.lclark.edu/academics/support/advising/)
 * [Registrar's Office](https://college.lclark.edu/offices/registrar)
-
+* [SAAB tutoring](https://college.lclark.edu/academics/support/saab-tutoring/)
+* [Symbolic and Quantitative Resource Center (SQRC)](https://college.lclark.edu/departments/mathematical_sciences/sqrc/)
+* [The Interactive Learning Center (ILC)](https://college.lclark.edu/offices/interactive_learning_center/)
+* [Writing Center](https://college.lclark.edu/academics/support/writing_center/)
 
 [Local Variables:	]: #
 [mode: gfm			]: #
 [fill-column: 80	]: #
 [End:				]: #
+
+##### [Fin]

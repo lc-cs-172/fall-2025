@@ -3,7 +3,9 @@ accessible set of answers.
 
 1a) What is your preferred name?
 
-1b) How do you pronounce it?
+1b) How do you pronounce your preferred name?  Please use a phonetic
+    spelling and/or a "rhymes with" description; e.g., for me, it's
+    skud'-lark, or rhymes with spud-lark (potato-bird).
 
 2) What are your preferred pronouns?
 
@@ -13,10 +15,15 @@ accessible set of answers.
 
 5) What is your preferred desktop environment?
 
-6) Why are you taking this class, i.e., what do you expect to get from it?
+6) What do you want to get from taking this class?
 
-7) What concerns, if any, do you have about the material or this class?
+7) What concerns, if any, do you have about this class?
 
-8) What else, if anything, do you want to mention?
+8) Have you read the syllabus?
+
+9) What is the reference cited in the Pythonorama Development Tools ->
+Command Line topic summary?
+
+10) What else, if anything, do you want to mention?
 
 []
