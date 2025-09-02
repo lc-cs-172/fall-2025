@@ -43,7 +43,8 @@ Jorge, the lab administrator.
 				| location SQRC (JR Howard 134)
 				| Mondays 9:00-10:00 AM
 				| Fridays 9:00-10:00 AM
-				| and by appointment
+				| and otherwise by appointment (send me email)
+    Usual Hours | https://calendar.app.google/39ke7XHGDEjKMiSz5
 
 	TA			| Samphasnearyroth (Nero) Chua
 	Email		| samphasnearyrothc@lclark.edu
