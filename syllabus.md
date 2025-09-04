@@ -7,10 +7,11 @@ CS-172, Section 01
 Monday/Wednesday/Friday 10:20-11:20 AM  
 Olin 305
 
-**Google Classroom:** We'll use [Google Classroom](https://classroom.google.com)
-throughout the semester to share assignment due dates, reminders about exams,
-and track your grade.  You'll submit your work there.
-You need to be logged in to your @lclark.edu address to access it.
+**Google Classroom:** This is our primary "trailhead" for the class.  We'll use
+[Google Classroom](https://classroom.google.com) throughout the semester to
+share assignment due dates, reminders about exams, and track your grade.  You'll
+submit your work there.  You need to be logged in to your @lclark.edu address to
+access it.
 
 **Google Group:** Our
 [Google Group](https://groups.google.com/a/lclark.edu/g/25fa-cs-172-01)
@@ -20,7 +21,9 @@ You need to be logged in to your @lclark.edu address to access it.
 
 **GitHub:** We'll use
 [lc-cs-172/fall-2025](https://github.com/lc-cs-172/fall-2025) to share notes,
-activities, and assignment details with you.
+activities, and assignment details with you.  This is a one-way communication
+conduit -- you don't need to use the "git" command, and you won't check anything
+in there -- you can read what you need on the website with a browser.
 
 **Pythonorama:** We'll often refer to
 [Pythonorama](https://github.com/alainkaegi/pythonorama#pythonorama) for info on
@@ -186,8 +189,9 @@ I more than hope you will visit me throughout the term, so I can learn more
 about your interests, answer your questions, and we can normalize talking with
 your instructors.  Office hours are _obligatory_ -- they are a key part of your
 participation grade.  You may bring a friend.  No appointment is necessary to
-see me during office hours; simply stop by Monday or Friday before class; or
-make an appointment by contacting me at jskudlarek@lclark.edu.
+see me during normal office hours -- but you can make an appointment to have
+priority -- simply stop by Monday or Friday before class.  To setup an
+appointment outside normal hours, please email me at jskudlarek@lclark.edu.
 
 I encourage interaction, both inside and outside the classroom.  Feel free to
 chat with me when we're on campus.
@@ -289,9 +293,9 @@ and credit all your sources.
 **Get to know your teacher.** Please feel free to stop by early in the semester,
 and stop by often.  Really.  That's **why I'm here** -- not only to answer your
 questions about the lectures and the assignments, but also to engage in
-conversation about computer science, working in industry, and other questions,
-big or small, that you may have.  I love interacting with students -- you are
-primary participants in our shared learning.
+conversation about computer science, software, programming, working in industry,
+and other questions, big or small, that you may have.  I love interacting with
+students -- you are primary participants in our shared learning.
 
 ## High-level Schedule
 
@@ -370,10 +374,11 @@ for the availability of tutors assigned to this class; or just come on by! No
 appointment needed.
 
 **SAAB**
-[SAAB tutoring](https://college.lclark.edu/academics/support/saab-tutoring/) may
-also be available.  One-on-one peer tutors are available for a range of courses
-across departments.  Request to be connected with a SAAB tutor if needed.
-Students are eligible to receive two hours of tutoring per course each week.
+[SAAB tutoring](https://college.lclark.edu/academics/support/saab-tutoring/)
+will also be available.  One-on-one peer tutors are available for a range of
+courses across departments.  Request to be connected with a SAAB tutor if
+needed.  Students are eligible to receive two hours of tutoring per course each
+week.
 
 ## L&C CS Resource
 
