@@ -15,7 +15,8 @@ accessible set of answers.
 
 4) What text editor(s) do you like to use?
 
-5) What is your preferred desktop environment?
+5) What is your preferred desktop environment
+   (e.g. GNU/Linux, MacOS, Windows 11)?
 
 6) What do you want to get from taking this class?
 
