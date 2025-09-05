@@ -52,8 +52,8 @@ Jorge, the lab administrator.
 	TA			| Samphasnearyroth (Nero) Chua
 	Email		| samphasnearyrothc@lclark.edu
 	Office hours| 
-				| location TBD
-				| Tues+Wed 5:00-6:00 PM (tentative)
+				| location Olin 305
+				| Tues+Wed 5:00-6:00 PM
 
 
 ## Why We're Here
@@ -211,6 +211,23 @@ learning in class.  **Assignments are due on Friday at 11:59 PM of the week they
 are due.** Points will be taken off if submitted late; in some cases, late
 assignments will not receive any credit.  Simple assignments are due in about a
 week.  More involved assignments will have about 2 weeks to complete.
+
+Correctness and clarity are essential, both in programs and writeups.  I
+automate some of the grading, so please follow the directions with regard to
+file naming and formatting.
+
+In general, all the files you will submit for assignments are text files, simple
+ASCII text files -- not Word documents, not Visual Studio code project files,
+not Google documents, just simple ASCII text files, which should adhere to these
+formatting standards:
+
+        - keep writeup line length <=  80 characters
+        - keep program line length <= 120 characters
+        - pick good names
+        - prefer short focused functions
+        - minimize global *variables* (global named constants are fine)
+        - use helpful comments -- you don't need many; you do need some
+          + especially for important [or obscure] constants, variables, and functions
 
 ## Late Policy
 
