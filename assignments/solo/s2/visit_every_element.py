@@ -1,13 +1,18 @@
 print();                        # ensure a newline after the >>> prompt
 
+print("================");
+print("================");
+print("================");
+
 ## demo min and max
-small = min(7, 42)
-large = max(7, 42)
-average = (small + large) / 2
+small = min(-7, 42)
+large = max(-7, 42)
+average = (-7 + 42 + 0 + 3)/4
 
 ## demo assert
-assert small == 7
+assert small == -7
 assert large == 42
+assert average == 9.5
 
 ## demo print
 print("min(7,42) =", small)
@@ -28,7 +33,7 @@ print();
 
 ## Assignment #2: compute values of data_min, data_max, and data_avg, and run this program.
 
-## FYI: we define these values so this scaffolding will execute
+## FYI: we define these values so this scaffolding will execute cleanly
 data_min = None
 data_max = None
 data_avg = None

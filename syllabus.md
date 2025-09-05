@@ -14,10 +14,11 @@ submit your work there.  You need to be logged in to your @lclark.edu address to
 access it.
 
 **Google Group:** Our
-[Google Group](https://groups.google.com/a/lclark.edu/g/25fa-cs-172-01)
-is available, and might be useful for incidental conversations and chats.
-But the bulk of our class interaction will be via our Google Classroom.
-You need to be logged in to your @lclark.edu address to access it.
+[Google Group](https://groups.google.com/a/lclark.edu/g/25fa-cs-172-01), To:
+25fa-cs-172-01@lclark.edu, is available, and might be useful for incidental
+conversations and chats.  But the bulk of our class interaction will be via our
+Google Classroom.  You need to be logged in to your @lclark.edu address to
+access it.
 
 **GitHub:** We'll use
 [lc-cs-172/fall-2025](https://github.com/lc-cs-172/fall-2025) to share notes,

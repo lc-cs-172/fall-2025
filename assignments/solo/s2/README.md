@@ -23,13 +23,13 @@ See also
 Copy the text file here named `visit_every_element.py` to your local work area
 and modify it to report the min, max, and average of `data`, the list of numbers.
 
-Run the updated program, putting the output into a file named `visit_every_element.out`.
+Run the updated program, putting the output into a text file named `visit_every_element.txt`.
 
 Go to https://classroom.google.com, and select LC-CS-172-Fall-2025.
 There, submit those 2 ASCII text files
 
 * `visit_every_element.py`
-* `visit_every_element.out`
+* `visit_every_element.txt`
 
 that you created for this assignment.
 
