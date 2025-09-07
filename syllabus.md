@@ -213,31 +213,51 @@ are due.** Points will be taken off if submitted late; in some cases, late
 assignments will not receive any credit.  Simple assignments are due in about a
 week.  More involved assignments will have about 2 weeks to complete.
 
-Correctness and clarity are essential, both in programs and writeups.  I
-automate some of the grading, so please follow the directions with regard to
-file naming and formatting.
+Correctness and clarity are essential, both in programs and writeups.  Coding
+style matters.  A lot.  Names are especially important, so be sure to use Python
+[appropriate stylistic conventions](https://github.com/alainkaegi/pythonorama/blob/main/style/names.md).
 
-In general, all the files you will submit for assignments are text files, simple
+I automate some of the grading, so please follow the
+directions with regard to file naming and file formats.
+
+In general, all the files you submit for assignments are text files, simple
 ASCII text files -- not Word documents, not Visual Studio code project files,
-not Google documents, just simple ASCII text files, which should adhere to these
-formatting standards:
+just simple ASCII text files, usually with file names ending in `.py` or `.txt`.
+To enable effective grading and feedback in Google Classroom, please submit them
+as Google Docs.
+
+Note that in Google Classroom, once an assignment is graded and returned, it
+can't be resubmitted.  And in fact, once you submit the assignment, you can't
+edit it (to prevent changes while it is being graded).  But it can be returned
+to you without grading, and then you can edit and resubmit.
+
+I want to encourage early submissions with few downsides; therefore, we'll
+(usually) let you revise your submission if it's before the due date and we have
+not yet graded it, but you'll have to ask us to return it to you ungraded first.
+
+The files should adhere to these formatting standards:
 
         - keep writeup line length <=  80 characters
         - keep program line length <= 120 characters
-        - pick good names
-        - prefer short focused functions
+		- use consistent indenting and whitespace
+        - use Python specific stylistic conventions
+        - prefer short focused functions that do one thing well
         - minimize global *variables* (global named constants are fine)
         - use helpful comments -- you don't need many; you do need some
-          + especially for important [or obscure] constants, variables, and functions
+          especially for important [or obscure] constants, variables, and functions
 
 ## Late Policy
 
 Unless otherwise indicated, all assignment are granted a 1 week extension, with
-*grade impact*, no pre-approval required.  Please realize that the assignments
+*progressive grade impact*, no pre-approval required.
+
+Please realize that the assignments
 are due when they are due, even if our class does not meet that day.  Delaying
 your submission also delays your learning and delays timely feedback.  Getting
 an extension beyond 1 week is highly unlikely -- the assignment is already 1
-week late.  See also
+week late.
+
+See also
 [Prof. Peter Drake's Policies](https://github.com/PeterDrake/drakepedia/blob/master/administrivia/policies.md).
 
 ## Grade Scale

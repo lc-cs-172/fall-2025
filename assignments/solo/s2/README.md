@@ -8,7 +8,7 @@ What you need:
 * web browser
 * Python installation (3.8 or better)
 * text editor
-* IDE (optional -- I suggest Visual Studio `code`; details in syllabus)
+* IDE (optional, but a good idea -- e.g. Visual Studio `code`, details in syllabus)
 
 ## Resources
 
@@ -26,12 +26,10 @@ and modify it to report the min, max, and average of `data`, the list of numbers
 Run the updated program, putting the output into a text file named `visit_every_element.txt`.
 
 Go to https://classroom.google.com, and select LC-CS-172-Fall-2025.
-There, submit those 2 ASCII text files
+There, submit those 2 ASCII text files as Google Docs for this assignment.
 
 * `visit_every_element.py`
 * `visit_every_element.txt`
-
-that you created for this assignment.
 
 Do not forget to hit the submit button.
 

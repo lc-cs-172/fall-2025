@@ -4,20 +4,20 @@ print("================");
 print("================");
 print("================");
 
-## demo min and max
+## demo simple computations
 small = min(-7, 42)
 large = max(-7, 42)
-average = (-7 + 42 + 0 + 3)/4
+other = (-7 + 42) / 2
 
 ## demo assert
 assert small == -7
 assert large == 42
-assert average == 9.5
+assert other == 17.5
 
 ## demo print
-print("min(7,42) =", small)
-print("max(7,42) =", large)
-print("avg(7,42) =", average)
+print("small =", small)
+print("large =", large)
+print("other =", other)
 
 ## define the list of data
 data = [3,1,4,1,5,9,2,6,5,3,5,8,9,7,9,3,2,3,8,4,6,2,6,4,3]
@@ -31,7 +31,8 @@ print();
 
 ##  ================================================================
 
-## Assignment #2: compute values of data_min, data_max, and data_avg, and run this program.
+## Assignment #2: Compute values of data_min, data_max, and data_avg, and run this program.
+##                Use only basic Python -- do not import any Python modules or packages.
 
 ## FYI: we define these values so this scaffolding will execute cleanly
 data_min = None
