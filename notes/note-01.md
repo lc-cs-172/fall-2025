@@ -76,7 +76,7 @@ Please see posting in our Google Classroom
 ## Select References
 
 Title								| Author(s)
--									| -
+----								| ----
 Pythonorama 						| Peter Drake and Alain Kägi
 Python Distilled 1/e 				| David M. Beazley
 Python Essential Reference 4/e		| David M. Beazley
