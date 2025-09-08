@@ -211,7 +211,8 @@ Classroom.  Assignments are designed to help you master and apply what we are
 learning in class.  **Assignments are due on Friday at 11:59 PM of the week they
 are due.** Points will be taken off if submitted late; in some cases, late
 assignments will not receive any credit.  Simple assignments are due in about a
-week.  More involved assignments will have about 2 weeks to complete.
+week.  More involved assignments will have about 2 weeks to complete.  We'll
+grade and return the assignment in about a week after it's due.
 
 Correctness and clarity are essential, both in programs and writeups.  Coding
 style matters.  A lot.  Names are especially important, so be sure to use Python
