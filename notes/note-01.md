@@ -42,6 +42,19 @@ Please see posting in our Google Classroom
 
 -- David Agans --
 
+### ``Don't Be Too Clever``
+
+    Debugging is twice as hard
+    as writing the code
+    in the first place.
+    
+    Therefore, if you write the code
+    *as cleverly as possible*,
+    you are, by definition,
+    **not smart enough** to debug it.
+
+    -- Brian Kernighan --
+
 ## What does data look like?
 
 * memory layout
