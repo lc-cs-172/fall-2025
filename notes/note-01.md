@@ -64,21 +64,6 @@ Please see posting in our Google Classroom
   - UNICODE
   - UTF-8
 * file types and formats
-* objects and references
-
-* Python specific info
-  - str vs. int
-  - ", """, ', '''
-  - "msg" * count
-  - indent 4 spaces
-
-## A bit about computing machinery
-
-* hardware circuits
-* hardware architecture
-* firmware and microcode
-* compilers and linkers and loaders
-* interpreters
 
 ## More maxims
 

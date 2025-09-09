@@ -45,9 +45,10 @@ Jorge, the lab administrator.
 	Email		| jskudlarek@lclark.edu
 	Office hours|
 				| location SQRC (JR Howard 134)
-				| Mondays 9:00-10:00 AM
-				| Fridays 9:00-10:00 AM
-				| and otherwise by appointment (send me email)
+				| Mon 9:00-10:00 AM (drop in)
+				| Fri 9:00-10:00 AM	(drop in)
+				| Tue 4:00-5:30 PM 	scheduled on my calendar
+				| and otherwise 	by appointment (send me email)
     Usual Hours | https://calendar.app.google/39ke7XHGDEjKMiSz5
 
 	TA			| Samphasnearyroth (Nero) Chua
@@ -209,10 +210,11 @@ All assignments will be announced on Google Classroom, details will be posted on
 our class GitHub repo, and assignments are submitted through our Google
 Classroom.  Assignments are designed to help you master and apply what we are
 learning in class.  **Assignments are due on Friday at 11:59 PM of the week they
-are due.** Points will be taken off if submitted late; in some cases, late
-assignments will not receive any credit.  Simple assignments are due in about a
-week.  More involved assignments will have about 2 weeks to complete.  We'll
-grade and return the assignment in about a week after it's due.
+are due.** Points will be taken off when submitted late -- the Late Policy below.
+
+Simple assignments are due in about a week.  More involved assignments will have
+about 2 weeks to complete.  We'll grade and return the assignment in about a
+week after it's due.
 
 Correctness and clarity are essential, both in programs and writeups.  Coding
 style matters.  A lot.  Names are especially important, so be sure to use Python
@@ -249,14 +251,21 @@ The files should adhere to these formatting standards:
 
 ## Late Policy
 
-Unless otherwise indicated, all assignment are granted a 1 week extension, with
-*progressive grade impact*, no pre-approval required.
+Unless otherwise indicated, assignment will be accepted up to 1 week late, with
+*progressive grade impact*.
 
-Please realize that the assignments
-are due when they are due, even if our class does not meet that day.  Delaying
-your submission also delays your learning and delays timely feedback.  Getting
-an extension beyond 1 week is highly unlikely -- the assignment is already 1
-week late.
+days late	| submit| reduction in score
+---			| ---	| ---
+1 			| Mon	|	-10%
+2			| Tue	|	-20%
+3			| Wed	|	-30%
+4			| Thu	|	-40%
+5			| Fri	|	-50%
+more than 5	| N/A	| no credit
+
+Please realize that the assignments are due when they are due, even if our class
+does not meet that day.  Delaying your submission also delays your learning and
+delays timely feedback.
 
 See also
 [Prof. Peter Drake's Policies](https://github.com/PeterDrake/drakepedia/blob/master/administrivia/policies.md).
