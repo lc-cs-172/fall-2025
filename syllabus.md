@@ -41,14 +41,17 @@ Jorge, the lab administrator.
 
 ## Teacher Information
 
+If you want to see me *outside of class or drop-in office hours*, you need
+to **make an appointment**.
+
 	Instructor	| Joseph P. SKUDLAREK
 	Email		| jskudlarek@lclark.edu
 	Office hours|
 				| location SQRC (JR Howard 134)
-				| Mon 9:00-10:00 AM (drop in)
-				| Fri 9:00-10:00 AM	(drop in)
-				| Tue 4:00-5:30 PM 	scheduled on my calendar
-				| and otherwise 	by appointment (send me email)
+				| Mon 9:00-10:00 AM (drop in or schedule)
+				| Fri 9:00-10:00 AM	(drop in or schedule)
+				| Tue 4:00-5:00 PM 	scheduled on my calendar
+				| and otherwise 	by calendar appointment (send me email)
     Usual Hours | https://calendar.app.google/39ke7XHGDEjKMiSz5
 
 	TA			| Samphasnearyroth (Nero) Chua
@@ -225,9 +228,11 @@ directions with regard to file naming and file formats.
 
 In general, all the files you submit for assignments are text files, simple
 ASCII text files -- not Word documents, not Visual Studio code project files,
-just simple ASCII text files, usually with file names ending in `.py` or `.txt`.
-To enable effective grading and feedback in Google Classroom, please submit them
-as Google Docs.
+just simple ASCII text files.  They must be in TEXT (not BINARY) format, and
+have the suffix `.txt`.  Python programs will have names like
+visit_every_element.py.txt and the program's output will go into files with
+names like visit_every_element.out.txt.
+[We hope this works; Google Classroom has quirks we're still working out.]
 
 Note that in Google Classroom, once an assignment is graded and returned, it
 can't be resubmitted.  And in fact, once you submit the assignment, you can't
@@ -240,13 +245,13 @@ not yet graded it, but you'll have to ask us to return it to you ungraded first.
 
 The files should adhere to these formatting standards:
 
-        - keep writeup line length <=  80 characters
         - keep program line length <= 120 characters
+        - keep writeup and output line length <=  80 characters
 		- use consistent indenting and whitespace
         - use Python specific stylistic conventions
         - prefer short focused functions that do one thing well
-        - minimize global *variables* (global named constants are fine)
-        - use helpful comments -- you don't need many; you do need some
+        - minimize global *variables* (global named constants are encouraged)
+        - use helpful comments -- you don't need many; you usually need some,
           especially for important [or obscure] constants, variables, and functions
 
 ## Late Policy
