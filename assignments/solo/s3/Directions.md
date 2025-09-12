@@ -11,8 +11,8 @@ Implement a simple in-place stable selection sort.
   - the algorithm is simple
   - the implementation is simple, using only basic Python
 
-* in-place: results are computed within the data array using minimal
-  extra storage 
+* in-place: reorder the input in-place, requiring only a small
+  _constant_ amount of extra storage
 
 * stable: if i < j and key[i] == key[j], then data[i] preceeds
   data[j] in the output 
@@ -32,8 +32,8 @@ submit your ASCII text files.
 
 ## Submit
 
-* `simple_selection_sort.py.txt`
-* `simple_selection_sort.out.txt`
+* `simple_selection_sort.py`
+* `simple_selection_sort.txt`
 
 Do not forget to hit the submit button.
 

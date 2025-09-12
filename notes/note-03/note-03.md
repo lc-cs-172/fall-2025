@@ -8,17 +8,34 @@
 
 * add/drop is today by 4PM
 
+* please mark your attendence in Google Classroom
+
+* English idioms I [mis]use
+
+    - cf.	-- conferatur			-- compare [with] (refer to)
+	- e.g. 	-- exempli gratia 		-- for example
+	- i.e. 	-- id est		 		-- that is (in other words)
+	- N.B.	-- note bene			-- note well (hey, this is important)
+	- FYI	-- for your information	-- noteworthy, but not note bene worthy
+
+## Post-it Note Protocol
+
+We're doing it today -- grab a red and green Post-it Note -- you should
+know what to do (refer to note-02).
+
 ## Google Classroom Submissions
 
-We expect the logistics will change to simplify it for everyone
-(e.g., calling it pgm.py.txt is a disgusting hack).
+We need to fix the submission logistics; e.g., calling it pgm.py.txt is
+a disgusting hack I can't abide.
 
-We're getting closer -- we have had submissions that "work", which is
-our goal -- we're working on the recipe so we can reliably reproduce it.
+We're getting closer -- we have had submissions that simply "work",
+which is our goal -- we're working on the recipe so we can reliably
+reproduce it.
 
-The pgm.py file as a Google Doc, content is [highlighted] ASCII, file
-has the right name (pgm.py), we can open directly in Google Classroom,
-and give line specific comments.
+* what worked well: submit the pgm.py file so it becomes a Google Doc,
+contents shown as [highlighted] ASCII; file has the right name (pgm.py),
+we can open directly in Google Classroom, and we can attach comments to
+a specific place in the file.
 
 ## Python specific data type info
 
