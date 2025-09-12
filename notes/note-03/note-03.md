@@ -2,7 +2,23 @@
 
 ## Fresh Assignment
 
-* cf ../../assignments/solo/s3/
+* cf. ../../assignments/solo/s3/ -- details below
+
+## Administrivia
+
+* add/drop is today by 4PM
+
+## Google Classroom Submissions
+
+We expect the logistics will change to simplify it for everyone
+(e.g., calling it pgm.py.txt is a disgusting hack).
+
+We're getting closer -- we have had submissions that "work", which is
+our goal -- we're working on the recipe so we can reliably reproduce it.
+
+The pgm.py file as a Google Doc, content is [highlighted] ASCII, file
+has the right name (pgm.py), we can open directly in Google Classroom,
+and give line specific comments.
 
 ## Python specific data type info
 
@@ -20,12 +36,18 @@
   `float` is commonly used  
   `numpy` supports both
 
-* demo_floating_point.py
+demo
+
+	demo_floating_point.py
 
 ## Biology Experiments
 
-* demo_quotes.py
-* demo_str_vs_int.py
+demo
+
+    demo_quotes.py
+demo
+
+    demo_str_vs_int.py
 
 ## Types revisited
 
@@ -33,8 +55,9 @@
 		--------|---------------|-----------|-----------|---------------
 		int   5	|	0b00000101	|	005		|	 5		|	0x05		
 		char '5'|	0b00110101	|	065		|	53		|	0x35
+demo
 
-* demo_integer_literals.py
+    demo_integer_literals.py
 
 ## Objects and References
 
