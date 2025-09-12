@@ -2,7 +2,7 @@
 
 ## Fresh Assignment
 
-* cf ../../assignments/solo/s3-HIDDEN/
+* cf ../../assignments/solo/s3/
 
 ## Python specific data type info
 
