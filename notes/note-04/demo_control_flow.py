@@ -23,6 +23,8 @@ def find_first(data, want):
 
 result = find_first(data, 7)
 print(f"find_first(data, 7) = {result}")
+result = find_first(data, -7)
+print(f"find_first(data, -7) = {result}")
     
 
 ## demo fancy for loop
