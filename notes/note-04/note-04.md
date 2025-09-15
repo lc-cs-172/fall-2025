@@ -40,6 +40,10 @@ what to do (refer to note-02).
 
 * Lectures are too mathematical?  It's par for and part of the course.
 
+* Why Famous Computer Scientists?  It matters.
+
+  PS: It was Gauss, about age 9, who summed 1..100 via `(n/2)*(n+1)`.    [details](https://math.stackexchange.com/questions/1017568/did-gauss-find-the-formula-for-123-ldotsn-2n-1n-in-elementary-school)
+
 ## Google Classroom Submissions
 
 (Revised, w/ corrections; adapted from version originally posted in our
