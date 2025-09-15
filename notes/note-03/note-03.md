@@ -25,6 +25,8 @@ know what to do (refer to note-02).
 
 ## Google Classroom Submissions
 
+[[This has been superseded; see note-04.mk]]
+
 We need to fix the submission logistics; e.g., calling it pgm.py.txt is
 a disgusting hack I can't abide.
 
@@ -136,39 +138,5 @@ demo
 ## Homework #3 (aka `assignment`)
 
 * Implement a simple **stable** selection sort using only basic Python.
-
-## Python Expressions
-
-* usual arithmetic and logical expressions
-
-* basic sequences (e.g., list; others described later)
-
-## Python Statements
-
-* pass
-* assignment
-* function call
-* control
-
-## Python Control Flow
-
-cf. [Pythonorama](https://github.com/alainkaegi/pythonorama/blob/main/control_structures/loops.md)
-
-* for
-* while
-* break
-
-## A bit about computing machinery
-
-* hardware circuits
-* hardware architecture
-  - cpu: ALU and registers
-  - memory
-  - I/O
-* firmware and microcode
-* operating system (aka kernel)
-* ecosystem
-* compilers and linkers and loaders
-* interpreters
 
 ## []

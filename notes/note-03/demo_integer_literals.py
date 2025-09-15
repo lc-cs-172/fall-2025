@@ -1,4 +1,8 @@
-print("\nTry, try, try again ...");
+print("""
+=========================
+==== Start of Output ====
+=========================
+""")
 
 int_5_lit = 5
 int_5_dec = 5
@@ -22,6 +26,10 @@ assert char_5_lit == char_5_bin == char_5_oct == char_5_dec == char_5_hex;
 assert   int_5_lit ==  int_5_bin ==  int_5_oct ==  int_5_dec ==  int_5_hex;
 assert  char_5_lit == char_5_bin == char_5_oct == char_5_dec == char_5_hex;
 
-print("[Fin]");
+print('''
+===============
+==== [QED] ====
+===============
+''')
 
 #[]#

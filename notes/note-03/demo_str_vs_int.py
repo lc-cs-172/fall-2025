@@ -1,4 +1,8 @@
-print("\nAnd we're off and running ...")
+print("""
+=========================
+==== Start of Output ====
+=========================
+""")
 
 foo = "17"
 bar = 17;
@@ -18,7 +22,10 @@ if bar == foo: print("BAD: have type mismatch")
 if foo != bar_str: print("BAD: what is going on?");
 if bar != foo_int: print("BAD: what is going on?");
 
-print("Game over.\nThanks for playing.");
+print('''
+===============
+==== [QED] ====
+===============
+''')
 
 #[]#
-

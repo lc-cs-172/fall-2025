@@ -1,6 +1,12 @@
 """ determine range and sigdig for floating point """
 
-print("\n================\n================")
+import math
+
+print("""
+=========================
+==== Start of Output ====
+=========================
+""")
 
 repeat = 1024+64;
 
@@ -21,12 +27,14 @@ for i in range(repeat):
 print(f"inf_real={inf_real}\n");
 
 try_real = 1.0;
+big_real = None;                # initialize to avoid warning in VS code
+doubling = None;                # initialize to avoid warning in VS code
 for doubling in range(repeat):
     big_real = try_real;
     try_real *= 2;
     if try_real == math.inf:
         break
-print("[enrichment] Why is `big_real` below less than `maxval` stated in note-02?")
+print("[enrichment] Why is `big_real` below less than `maxval` stated in note-02?\n")
 print(f"big_real={big_real}\ndoubling={doubling}\n");
 
 ## determine significant digits 
@@ -37,5 +45,11 @@ for i in range(repeat):
     if one+tiny == one: break
     tiny /= 2
 print(f"tiny={tiny}\n");
+
+print('''
+===============
+==== [QED] ====
+===============
+''')
 
 #[]#
