@@ -1,7 +1,7 @@
 ##  ================================================================
 ## Assignment Description
 ##
-##  Implement my_sort(), an *inplace* STABLE insertion sort 
+##  Implement my_sort(), an *inplace* STABLE selection sort 
 ##  using only *basic* Python (e.g., simple loops)
 ##  by replacing the body of the my_sort function
 ##  with your CLEAN working code.
