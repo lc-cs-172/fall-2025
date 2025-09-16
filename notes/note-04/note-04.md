@@ -44,6 +44,8 @@ what to do (refer to note-02).
 
   PS: It was Gauss, about age 9, who summed 1..100 via `(n/2)*(n+1)`.    [details](https://math.stackexchange.com/questions/1017568/did-gauss-find-the-formula-for-123-ldotsn-2n-1n-in-elementary-school)
 
+* More live coding.  Coming up ;-)
+
 ## Google Classroom Submissions
 
 (Revised, w/ corrections; adapted from version originally posted in our
@@ -97,7 +99,8 @@ optional, and Clarity is a Virtue.
 ### Syllabus
 
 The syllabus is continuously being refined -- I point out notable
-changes in the notes, so you don't have to keep rereading it.
+changes in these daily topics notes, so you don't have to keep rereading
+it.
 
 ### Notes
 
@@ -222,6 +225,7 @@ cf. [Pythonorama names](https://github.com/alainkaegi/pythonorama/blob/main/styl
 
 cf. [Pythonorama loops](https://github.com/alainkaegi/pythonorama/blob/main/control_structures/loops.md)
 
+* if
 * for
 * while
 * break

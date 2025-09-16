@@ -42,13 +42,13 @@ print(f"sum_smaller(data, {limit}) = {result}")
 
 ## demo while and continue
 def strange_sum(data, limit, goal):
-    """ add up all the numbers < limit until you reach the goal """
+    """ return the smallest sum >= goal of numbers < limit """
     i = -1                      # non-standard initialization
     sum = 0
     while(sum < goal):
         i += 1
         item = data[i]
-        if item >= limit: continue # NB: >=, not >
+        if item >= limit: continue # NB: `>=', not `>'
         sum += item
     return sum
 
