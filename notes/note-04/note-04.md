@@ -82,7 +82,7 @@ one with the program output (pgm.txt)
 
 cf. [Pythonorama command_line](https://github.com/alainkaegi/pythonorama/blob/main/development_tools/command_line.md)
 
-Either way, you create those two files, and that's what you submit.
+Either way, you create those two ASCII text files, and that's what you submit.
 
 ## Class Collateral including Required Readings
 
@@ -97,7 +97,7 @@ optional, and Clarity is a Virtue.
 ### Syllabus
 
 The syllabus is continuously being refined -- I point out notable
-changes, so you don't have to keep rereading it.
+changes in the notes, so you don't have to keep rereading it.
 
 ### Notes
 
@@ -236,9 +236,9 @@ cf. [demo flow control](./demo_control_flow.py)
   - cpu: ALU and registers
   - memory
   - I/O (terminal+disk+network)
-* firmware and microcode
+* microcode and firmware
 * operating system (kernel+root+user)
-* ecosystem
+* platform/ecosystem
 * compilers and linkers and loaders
 * interpreters
 
