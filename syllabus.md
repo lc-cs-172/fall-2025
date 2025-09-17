@@ -93,7 +93,7 @@ to listening, learning, and *participating* in *your* educational journey.
 
 CS-172, Computer Science II, is fundamentally an _introduction_ to the science
 of Computer Science, exploring data structures and algorithms with analysis,
-employing object-oriented programming and recursion, using Python 3.
+employing object-oriented programming and recursion, using Python 3.8 or better.
 
 This course covers more sophisticated algorithms than you saw in CS-171, and
 some basics of software development.  The class is taught with Python; you are
@@ -133,9 +133,9 @@ communication, and best programming practices.
 programming and group exercises.
 
 This class is *not* about the nuts and bolts of programming in Python.  This
-class *is* about learning _how_ to program, in general.  We use Python 3 for our
-programming activities.  But the skills you'll learn and practice in this class
-are applicable to most other programming languages.
+class *is* about learning _how_ to program, in general.  We use Python 3.8 or
+better for our programming activities.  But the skills you'll learn and practice
+in this class are applicable to most other programming languages.
 
 This class is *not* primarily about programming, it's about problem solving
 using computational capabilities.  Programming is a means to implement
