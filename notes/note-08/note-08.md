@@ -39,6 +39,20 @@ We're doing in-class active feedback today
 -- grab a red and green Post-it Note --  
 you know what to do (refer to note-02).
 
+## Lecture
+
+* help
+* reserved words
+* functions
+  - def
+  - return
+* scoping
+  - def
+  - global
+  - list comprehension
+* id()
+* demo_scoping.py
+
 ## Let's Code!
 
 Have at it -- homework assignment #4, aka pair/p1

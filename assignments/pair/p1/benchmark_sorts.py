@@ -34,7 +34,7 @@ Assignment Description
     to generate REALIABLE output:
 
     * the supplied sorts must be of the right type, and give the right results
-    * the estimated expected values is accurate (e.g., CoV <= 2% would be nice)
+    * the estimated expected values is accurate (e.g., CoV <= 3% would be nice)
     *     e.g., if the performance curve is quadratic, one should see a parabola
 
 Note
@@ -98,7 +98,8 @@ def show_stats(tag, sample):
 {CoV=:0.2f}%
 ''', end=None )
 
-    if CoV > 2: warnings.warn(f"{tag=} {CoV=} > 2%")
+    cov_warn_past = 3
+    if CoV > cov_warn_past: warnings.warn(f"{tag=} {CoV=} > {cov_warn_past}%")
 
     return (avg,CoV)
 
