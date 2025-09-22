@@ -68,9 +68,10 @@ import matplotlib.pyplot as plt
 import matplotlib
 import pprint
 import sys
+import warnings
 
 def show_stats(tag, sample):
-    """ show the basic sample statistics; return the average """
+    """ show the basic sample statistics; return (avg,CoV) """
 
     (lo,mid,hi) = np.quantile(sample, [0.25, 0.50, 0.75])
     (min,max) = (float(np.min(sample)),  float(np.max(sample)))
@@ -97,12 +98,14 @@ def show_stats(tag, sample):
 {CoV=:0.2f}%
 ''', end=None )
 
-    return avg
+    if CoV > 2: warnings.warn(f"{tag=} {CoV=} > 2%")
 
-## enable visual inspection of show_stats, and verify the returned value
+    return (avg,CoV)
+
+## enable manual (visual)  inspection of show_stats, and verify the returned value
 sample = [ float(i) for i in range(101) ]       # generate some easy to analyze data
 ev = show_stats("range(101)", sample)           # and print the statistics of the data
-assert 50 == ev
+assert 50 == ev[0]
 
 ##  ----------------------------------------------------------------
 
@@ -135,10 +138,10 @@ def time_trials(action):
 ## vvvv student code goes goes BELOW vvvv ## --leave this line alone
 
 ## PlaceHolderCode ##
-TRIAL_COUNT = 5                 # NB: must remain CONSTANT, is integer >= 5
+TRIAL_COUNT = 2                 # NB: must remain CONSTANT, is integer >= 1
 
 ## PlaceHolderCode ##
-SIZE_RANGE = [17, 42, 79]       # NB: must remain CONSTANT, is list of integers
+SIZE_RANGE = [17, 42, 79]       # NB: must remain CONSTANT, is list of positive integers
 
 ##  ================================================================
 ##  NB: comparison_count is the number of DATA comparisions
@@ -258,6 +261,8 @@ def safe_sort(sort, data):
 
     result = sort(data)
 
+    if 0:                       # force sort failure to test error detection
+        random.shuffle(data)
     if not is_sorted(data):
         raise RuntimeError("resulting data not sorted")
     return result
@@ -336,7 +341,7 @@ def grab_xy(results, metric, kind):
             else:                        assert "unexpected metric"
 
             x.append(size)
-            y.append(cost)
+            y.append(cost[0])   # take just the avg from (avg,CoV)
 
     if debug: print(f"DEBUG: {x=} {y=}");
 
@@ -411,11 +416,13 @@ def get_trial_results(is_run_trials = True):
     if verbose: print(f'{results=}')
     return results
 
-def close():
+def clear():
+    ## name inspired by clear(1) - clear the terminal screen
     """helper function to close all our matplotlib.pyplot windows"""
     plt.close('all')
 
 def clean():
+    ## name inspired by `clean', a common Makefile target
     """helper function to clean out our _HIDDEN_ modules"""
     del sys.modules['_HIDDEN_benchmark_sorts_config']
     del sys.modules['_HIDDEN_simple_selection_sort']  
