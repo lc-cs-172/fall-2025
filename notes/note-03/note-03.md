@@ -137,6 +137,7 @@ demo
 
 ## Homework #3 (aka `assignment`)
 
-* Implement a simple **stable** selection sort using only basic Python.
+* Implement a simple selection sort using only basic Python.  
+  Note that selection sort is **not** *stable*.
 
 ## []

@@ -1,4 +1,4 @@
-# LC-CS-172 Topics for Wed 19-Sep-2025
+# LC-CS-172 Topics for Fri 19-Sep-2025
 
 ## Administrivia and Noteworthy News
 

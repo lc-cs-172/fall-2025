@@ -5,7 +5,7 @@ by implementing an important standard algorithm using basic Python.
 
 ## Task
 
-Implement a simple in-place stable selection sort.
+Implement a simple in-place selection sort.
 
 * simple:
   - the algorithm is simple
@@ -14,10 +14,14 @@ Implement a simple in-place stable selection sort.
 * in-place: reorder the input in-place, requiring only a small
   _constant_ amount of extra storage
 
+## FYI
+
 * stable: if i < j and key[i] == key[j], then data[i] preceeds
   data[j] in the output 
 
     That is, don't change the relative order of key-equal elements.
+
+  NB: selection sort is not stable -- consider [2a|2b|1]
 
 ## Logistics
 

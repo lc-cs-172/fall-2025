@@ -36,9 +36,11 @@ You'll each get the same homework score based on the primary submission.
 ## Logistics
 
 Copy the program text file here to your local work area; modify it as
-described in the Assignment Description comments within that file.
+described in the Assignment Description comments within that file; save
+it with the **updated name**.
 
-Generate the required .txt and .png files.  Use the specified names.
+Run the program to generate the required .txt and .png files.  Use the
+specified names for the program output and the assignment write-up.
 
 Go to this assignment in [LC-CS-172-Fall-2025](https://classroom.google.com);
 submit your files.
