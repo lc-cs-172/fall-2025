@@ -69,6 +69,7 @@ import matplotlib
 import pprint
 import sys
 import warnings
+import math                     # be explicit -- don't depend on other imports satisfying this dependency
 
 def show_stats(tag, sample):
     """ show the basic sample statistics; return (avg,CoV) """
