@@ -72,7 +72,7 @@ import warnings
 import math                     # be explicit -- don't depend on other imports satisfying this dependency
 
 def show_stats(tag, sample):
-    """ show the basic sample statistics; return (avg,CoV) """
+    """ show the basic sample statistics; return (avg,CoV_SEM) """
 
     (lo,mid,hi) = np.quantile(sample, [0.25, 0.50, 0.75])
     (min,max) = (float(np.min(sample)),  float(np.max(sample)))
@@ -81,9 +81,12 @@ def show_stats(tag, sample):
 
     ## coefficient of variation -- avoid dividing by zero ... and get the right signed value, including case 0/0
     if avg != 0:
-        CoV = std/avg *100
+        CoV_raw = std/avg *100
     else:
-        CoV = 0 if std == 0 else np.sign(std) * math.inf
+        CoV_raw = 0 if std == 0 else np.sign(std) * math.inf
+
+    ## apply Standard Error of the Mean -- comes from Central Limit Theorem -- we're looking at average of iid
+    CoV_SEM = CoV_raw / math.sqrt(cnt)
 
     print(f'''
 ---- {tag} ----
@@ -96,13 +99,17 @@ def show_stats(tag, sample):
 {cnt=:0.3e}
 {avg=:0.3e}
 {std=:0.3e}
-{CoV=:0.2f}%
+{CoV_raw=:0.2f}%
+{CoV_SEM=:0.2f}%
 ''', end=None )
 
-    cov_warn_past = 3
-    if CoV > cov_warn_past: warnings.warn(f"{tag=} {CoV=} > {cov_warn_past}%")
+    cov_warn = 3                # 3 sigma captures 99.7% of population; at 3% CoV, implies our estimate is within 10%
+    if CoV_SEM > cov_warn:
+        msg = f"{tag=} {CoV_SEM=} > {cov_warn}%"
+        warnings.warn(msg)           # output to stderr
+        print(f"UserWarning: {msg}") # output to stdout
 
-    return (avg,CoV)
+    return (avg,CoV_raw)
 
 ## enable manual (visual)  inspection of show_stats, and verify the returned value
 sample = [ float(i) for i in range(101) ]       # generate some easy to analyze data
@@ -188,7 +195,7 @@ def bubble_sort(data):
 if 'IS_VERIFY_TEST_HARNESS' in globals():
     pass
 else:
-    IS_VERIFY_TEST_HARNESS = 0
+    IS_VERIFY_TEST_HARNESS = '--verify_test_harness' in sys.argv
 
 if IS_VERIFY_TEST_HARNESS:
 
@@ -346,8 +353,8 @@ def grab_xy(results, metric, kind):
             y.append(cost[0])   # take just the avg from (avg,CoV)
 
     if debug: print(f"DEBUG: {x=} {y=}");
-
     if debug: print(f"DEBUG: ... grab_xy(results, {metric=}, {kind=}) finished")
+
     return (x,y)
     
 def plot_one_graph(results, metric):
@@ -357,11 +364,11 @@ def plot_one_graph(results, metric):
     if debug: print(f"DEBUG: plot_one_graph {metric=}")
 
     plt.figure(figsize=(7,9.5)); # portrait
-    plt.rcParams['font.size'] = 14  # Change to your desired size
-    plt.rcParams['axes.labelsize'] = 16  # Axis labels
-    plt.rcParams['xtick.labelsize'] = 12  # X-axis tick labels
-    plt.rcParams['ytick.labelsize'] = 12  # Y-axis tick labels
-    plt.rcParams['axes.titlesize'] = 18  # Title size    
+    plt.rcParams['font.size'] = 14
+    plt.rcParams['axes.labelsize'] = 16 
+    plt.rcParams['xtick.labelsize'] = 12
+    plt.rcParams['ytick.labelsize'] = 12
+    plt.rcParams['axes.titlesize'] = 18
 
     for spot in range(len(_sortKind)):
         kind = _sortKind[spot]
