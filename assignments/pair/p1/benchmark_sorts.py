@@ -139,17 +139,26 @@ def time_trials(action):
 
 ##================================================================
 ##================================================================
+## vvvv student code goes goes BELOW vvvv -- leave this line alone
+##================================================================
 ##================================================================
 
-##  ----------------------------------------------------------------
-##  ----------------------------------------------------------------
-##  ----------------------------------------------------------------
-## vvvv student code goes goes BELOW vvvv ## --leave this line alone
-
 ## PlaceHolderCode ##
+##----------------------------------------------------------------
+## This value determines the number of times the sort of the given size is run.
+
+## Since the metrics depend on the input data, we have to run multiple trials
+## and average them to get the expected value.
+
+## Just like we would need to flip a coin a number of times to see if it's fair,
+## we need to run the sort with different data to determine its cost.
+##----------------------------------------------------------------
 TRIAL_COUNT = 2                 # NB: must remain CONSTANT, is integer >= 1
 
 ## PlaceHolderCode ##
+##----------------------------------------------------------------
+## This value determines the various sizes of the data that gets sorted.
+##----------------------------------------------------------------
 SIZE_RANGE = [17, 42, 79]       # NB: must remain CONSTANT, is list of positive integers
 
 ##  ================================================================
@@ -157,6 +166,10 @@ SIZE_RANGE = [17, 42, 79]       # NB: must remain CONSTANT, is list of positive 
 ##      exchange_count   is the number of DATA exchanges (aka swaps)
 ##  ================================================================
 
+##----------------------------------------------------------------
+## These are dummy sort routines used to verify the test harness.
+## You need to replace them with your own instrumented code.
+##----------------------------------------------------------------
 ## PlaceHolderCode ##
 def selection_sort(data):
     ### REPLACE THESE LINES -- MUST USE OWN SORT
@@ -187,10 +200,11 @@ def bubble_sort(data):
     n += random.randint(1*wiggle, 2*wiggle)
     return (n*n/2, n*n/4)
 
-## ^^^^ student code goes goes ABOVE ^^^^ ## --leave this line alone
-##  ----------------------------------------------------------------
-##  ----------------------------------------------------------------
-##  ----------------------------------------------------------------
+##================================================================
+##================================================================
+## ^^^^ student code goes goes ABOVE ^^^^ -- leave this line alone
+##================================================================
+##================================================================
 
 if 'IS_VERIFY_TEST_HARNESS' in globals():
     pass
@@ -218,10 +232,6 @@ if IS_VERIFY_TEST_HARNESS:
     import _HIDDEN_simple_bubble_sort    as bubble_dut
     bubble_sort    = bubble_dut.my_sort
     bubble_dut.IS_VERBOSE_MY_SORT = config_dut.IS_VERBOSE_MY_SORT
-
-##================================================================
-##================================================================
-##================================================================
 
 ## define MANIFEST CONSTANTS
 
