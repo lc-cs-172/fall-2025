@@ -147,17 +147,19 @@ def time_trials(action):
 ##----------------------------------------------------------------
 ## This value determines the number of times the sort of the given size is run.
 
-## Since the metrics depend on the input data, we have to run multiple trials
-## and average them to get the expected value.
+## Since the metrics can depend on the input data, we have to run
+## multiple trials and average them to get the expected value.
 
-## Just like we would need to flip a coin a number of times to see if it's fair,
-## we need to run the sort with different data to determine its cost.
-##----------------------------------------------------------------
+## That is, just like we need to flip a coin a number of times to see if
+## it's fair, we need to run sorts with metrics dependent on input data
+## to determine its expected (average) cost.
+## ----------------------------------------------------------------
 TRIAL_COUNT = 2                 # NB: must remain CONSTANT, is integer >= 1
 
 ## PlaceHolderCode ##
 ##----------------------------------------------------------------
 ## This value determines the various sizes of the data that gets sorted.
+## Larger sizes take longer, but usually give more accurate results.
 ##----------------------------------------------------------------
 SIZE_RANGE = [17, 42, 79]       # NB: must remain CONSTANT, is list of positive integers
 
@@ -167,7 +169,8 @@ SIZE_RANGE = [17, 42, 79]       # NB: must remain CONSTANT, is list of positive 
 ##  ================================================================
 
 ##----------------------------------------------------------------
-## These are dummy sort routines used to verify the test harness.
+## These are DUMMY sort routines used to verify the test harness.
+## They are NOT NECESSARILY ACCURATE wrt/ metrics returned!
 ## You need to replace them with your own instrumented code.
 ##----------------------------------------------------------------
 ## PlaceHolderCode ##
@@ -206,6 +209,11 @@ def bubble_sort(data):
 ##================================================================
 ##================================================================
 
+## provide dummy routine to satisfy the test fixture
+def mystery_sort(data):
+    data.sort()
+    return(0,0)
+
 if 'IS_VERIFY_TEST_HARNESS' in globals():
     pass
 else:
@@ -233,15 +241,20 @@ if IS_VERIFY_TEST_HARNESS:
     bubble_sort    = bubble_dut.my_sort
     bubble_dut.IS_VERBOSE_MY_SORT = config_dut.IS_VERBOSE_MY_SORT
 
+    import _HIDDEN_simple_mystery_sort    as mystery_dut
+    mystery_sort    = mystery_dut.my_sort
+    mystery_dut.IS_VERBOSE_MY_SORT = config_dut.IS_VERBOSE_MY_SORT
+
 ## define MANIFEST CONSTANTS
 
 SELECT = 'select'
 INSERT = 'insert'
 BUBBLE = 'bubble'
+MYSTERY = 'mystery'
 
-_sortKind = [ INSERT, SELECT, BUBBLE ] # re-ordered so markers on plots come out nicely
+_sortKind = [ INSERT, SELECT, BUBBLE, MYSTERY ] # re-ordered so markers on plots come out nicely
 
-sort_map = { SELECT:selection_sort, INSERT:insertion_sort, BUBBLE:bubble_sort }
+sort_map = { SELECT:selection_sort, INSERT:insertion_sort, BUBBLE:bubble_sort, MYSTERY:mystery_sort }
 
 ## define metric as manifest constant to reduce risk of runtime error
 ## NB: this is the name of the metric, which is also part of the name of the output file

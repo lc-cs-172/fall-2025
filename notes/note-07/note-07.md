@@ -39,8 +39,6 @@ you know what to do (refer to note-02).
 
 * collections hold references
 
-[We are here]
-
 * lists  
   [Pythonorama lists](https://github.com/alainkaegi/pythonorama/blob/main/data_structures/lists.md)
   - collections hold references  
@@ -59,6 +57,8 @@ Let's learn to use it, and use it well.
 
 ## Let's Code!
 Have at it -- homework assignment #4, aka pair/p1
+
+#### [[we got to about here]]
 
 ## A Bit about Computing Machinery
 

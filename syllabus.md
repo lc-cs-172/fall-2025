@@ -316,14 +316,29 @@ policy if needed to improve effectiveness.
 
 Group programming assignments will be done in pairs.
 
-There will be two midterms and one final exam, with weights 8/10/12.  The
-midterms might have 10 questions each; the final could have 20 questions.  Each
-midterm will cover all the preceding material, the final is comprehensive.
+### Exams
 
-The exams are closed-book pen-and-paper tests given in the classroom.  Each exam
-will include a number of one-star and two-star questions from the Questions and
-Answers sections of relevant pages in
-[Pythonorama](https://github.com/alainkaegi/pythonorama#pythonorama).
+There will be two midterms and one final exam, with weights 8/10/12.  The
+midterms will have about 10 questions each; the final will have about 20
+questions.  Each midterm will cover all the preceding material, the final is
+comprehensive.
+
+The exams are closed-book pen-and-paper tests given in the classroom -- No
+calculators, no smart phones or watches, no computers or tablets, no notes.
+
+Sources for exam questions include
+
+* anything taught in class, especially if taught with emphasis
+
+* anything in the  **required reading**  
+  the notes, including demo programs (e.g., notes-nn/*{note*.md,demo*.py}),
+  and any Pythonorama topic mentioned in the notes, is required reading
+
+* any number of one-star and two-star questions from the Questions and Answers
+  sections of relevant pages in
+  [Pythonorama](https://github.com/alainkaegi/pythonorama#pythonorama).
+
+* applying what was taught in class or via the required reading
 
 ## Helpful Tips
 

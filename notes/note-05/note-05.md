@@ -167,6 +167,8 @@ I'll explain in class.
 * tuples  
   [Pythonorama tuples](https://github.com/alainkaegi/pythonorama/blob/main/data_structures/tuples.md)
 
+#### [[we got to about here]]
+
 * lists  
   [Pythonorama lists](https://github.com/alainkaegi/pythonorama/blob/main/data_structures/lists.md)
   - collections hold references  
