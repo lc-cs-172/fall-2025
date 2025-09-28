@@ -369,7 +369,7 @@ def grab_xy(results, metric, kind):
             if   WALLCLOCK    == metric: cost = _cost[0]
             elif COMPARE      == metric: cost = _cost[1]
             elif EXCHANGE     == metric: cost = _cost[2]
-            elif MEMORYACCESS == metric: cost = _cost[1]+_cost[2]
+            elif MEMORYACCESS == metric: cost = (_cost[1][0]+_cost[2][0],0) # make fake tuple -- tuple + concatenates!!!
             else:                        assert "unexpected metric"
 
             x.append(size)
@@ -382,9 +382,9 @@ def grab_xy(results, metric, kind):
     
 def plot_one_graph(results, metric):
     """plot a graph and save the result"""
-    debug = 0
+    debug = 1
 
-    if debug: print(f"DEBUG: plot_one_graph {metric=}")
+    if debug: print(f"\n\nDEBUG: plot_one_graph {metric=}")
 
     plt.figure(figsize=(7,9.5)); # portrait
     plt.rcParams['font.size'] = 14
@@ -397,6 +397,7 @@ def plot_one_graph(results, metric):
         kind = _sortKind[spot]
         (x, y) = grab_xy(results, metric, kind)
         plt.plot(x, y, label=kind, marker=spot+8, ms=10, mew=2)
+        if debug: print(f'DEBUG: plt.plot({x=}, {y=}, label={kind})')
 
     plt.xlabel("problem size");
 
