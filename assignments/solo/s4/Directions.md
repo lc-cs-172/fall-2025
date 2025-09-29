@@ -1,4 +1,4 @@
-# Assignment #Solo-4: Generate Pascal's Triangle
+# Assignment #5: Generate Pascal's Triangle
 
 This assignment is designed to assess/improve your coding capabilities
 by using Python lists, string manipulation, and output formatting.

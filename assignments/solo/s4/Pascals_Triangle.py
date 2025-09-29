@@ -4,7 +4,7 @@
 ##  Implement the function generate_pascals_triangle by replacing the
 ##  placeholder body of the function with your CLEAN working code.
 ##
-##  For extra credit, use list comprehension or the zip() function.
+##  For extra credit, use list comprehension and maybe the zip() function.
 ##
 ##  The output must be well formatted;
 ##  generate_pascals_triangle(5) output looks like this:
