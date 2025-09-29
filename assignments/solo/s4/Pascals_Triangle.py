@@ -1,0 +1,57 @@
+##  ================================================================
+## Assignment Description
+##
+##  Implement the function generate_pascals_triangle by replacing the
+##  placeholder body of the function with your CLEAN working code.
+##
+##  For extra credit, use list comprehension or the zip() function.
+##
+##  The output must be well formatted;
+##  generate_pascals_triangle(5) output looks like this:
+##
+##                      1
+##		    1       1
+##		1	2	1
+##	    1	    3       3	    1
+##	1	4	6	4	1
+##
+##  To generate the next line > 2
+##    start the line with a 1
+##    sum each pair from the line above
+##    end the line with a 1
+##
+##  Only replace code in the function body.
+##  Leave the rest of the file intact.
+##  For now, you're welcome to have _disabled_ debugging code, 
+##    but do not produce extraneous output in what you submit.
+##
+##  ================================================================
+
+## ensure new line after any >>> interactive prompt
+print();
+
+## mark start of execution
+print("""
+=========================
+==== Start of Output ====
+=========================
+""")
+
+def generate_pascals_triangle(size):
+    """ generate properly formatted Pascal's Triangle of the given size; size is the number of rows """
+    ## ***--->>> YOUR CODE GOES HERE  <<<---***
+    ## replacing these comments and the following pass statement
+    pass
+
+## exercise the function
+for size in range(7,10):
+    print(f"\n==== Pascal's Triangle of Size {size} ====\n\n")
+    generate_pascals_triangle(size)
+
+print('''
+===============
+==== [QED] ====
+===============
+''')
+
+#[]#    
