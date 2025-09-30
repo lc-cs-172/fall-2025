@@ -3,6 +3,7 @@
 ##
 ##  Implement the function generate_pascals_triangle by replacing the
 ##  placeholder body of the function with your CLEAN working code.
+##  You may also add your own functions in the student code section.
 ##
 ##  For extra credit, use list comprehension and maybe the zip() function.
 ##
@@ -16,15 +17,14 @@
 ##	1	4	6	4	1
 ##
 ##  To generate the next line > 2
-##    start the line with a 1
+##    start the line with "1"
 ##    sum each pair from the line above
-##    end the line with a 1
+##    end the line with "1"
 ##
-##  Only replace code in the function body.
-##  Leave the rest of the file intact.
+##  Only replace code in the student code section;
+##    leave the rest of the file intact.
 ##  For now, you're welcome to have _disabled_ debugging code, 
 ##    but do not produce extraneous output in what you submit.
-##
 ##  ================================================================
 
 ## ensure new line after any >>> interactive prompt
@@ -37,11 +37,23 @@ print("""
 =========================
 """)
 
+##================================================================
+##================================================================
+## vvvv student code goes goes BELOW vvvv -- leave this line alone
+##================================================================
+##================================================================
+
 def generate_pascals_triangle(size):
     """ generate properly formatted Pascal's Triangle of the given size; size is the number of rows """
     ## ***--->>> YOUR CODE GOES HERE  <<<---***
     ## replacing these comments and the following pass statement
     pass
+
+##================================================================
+##================================================================
+## ^^^^ student code goes goes ABOVE ^^^^ -- leave this line alone
+##================================================================
+##================================================================
 
 ## exercise the function
 for size in range(7,10):
