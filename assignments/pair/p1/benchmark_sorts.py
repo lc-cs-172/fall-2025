@@ -71,6 +71,9 @@ import sys
 import warnings
 import math                     # be explicit -- don't depend on other imports satisfying this dependency
 
+## try to ensure all the warnings are displayed in vs code -- some places yes, some places no with or without this
+warnings.simplefilter("always")
+
 def show_stats(tag, sample):
     """ show the basic sample statistics; return (avg,CoV_SEM) """
 
@@ -241,6 +244,8 @@ if IS_VERIFY_TEST_HARNESS:
     bubble_sort    = bubble_dut.my_sort
     bubble_dut.IS_VERBOSE_MY_SORT = config_dut.IS_VERBOSE_MY_SORT
 
+    ## FYI: vscode likes to complain about this one ...
+    ##
     import _HIDDEN_simple_mystery_sort    as mystery_dut
     mystery_sort    = mystery_dut.my_sort
     mystery_dut.IS_VERBOSE_MY_SORT = config_dut.IS_VERBOSE_MY_SORT
@@ -370,7 +375,10 @@ def grab_xy(results, metric, kind):
             elif COMPARE      == metric: cost = _cost[1]
             elif EXCHANGE     == metric: cost = _cost[2]
             elif MEMORYACCESS == metric: cost = (_cost[1][0]+_cost[2][0],0) # make fake tuple -- tuple + concatenates!!!
-            else:                        assert "unexpected metric"
+            else: 
+                ## quiet Pylance complaint by assigning dummy value we should never use
+                cost = (0,0)    
+                assert "unexpected metric"
 
             x.append(size)
             y.append(cost[0])   # take just the avg from (avg,CoV)

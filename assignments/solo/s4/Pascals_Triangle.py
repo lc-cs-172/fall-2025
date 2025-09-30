@@ -3,7 +3,8 @@
 ##
 ##  Implement the function generate_pascals_triangle by replacing the
 ##  placeholder body of the function with your CLEAN working code.
-##  You may also add your own functions in the student code section.
+##  You may also add your own functions in the student code section,
+##  and use any imports used in class work.
 ##
 ##  For extra credit, use list comprehension and maybe the zip() function.
 ##
