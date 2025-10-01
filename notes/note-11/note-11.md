@@ -4,10 +4,21 @@
 
 
 * reminder: homework #4 due today by 11:59 PM  
-  NB: I found a bug in graph generation
-  -- access counts were wrong
 
-* homework is #5, aka solo/s4 -- Pascal's Triangle
+* NB: I found a bug in graph generation  
+  -- access counts were wrong  
+  -- Python dynamic polymorphism!
+
+	```python
+
+		foo = 1 + 3 
+		foo == 4
+
+		bar = (1,2) + (3,4)
+		bar == (1,2,3,4)
+	```
+
+* new homework is #5, aka solo/s4 -- Pascal's Triangle
 
 ## midterm #1 
 
@@ -15,13 +26,5 @@
     computers off -- lockscreen or logged out
 
   - exam given from 10:30 AM until 11:10 AM
-
-## Feedback
-
-TBD
-
-## Let's Code!
-
-Have at it -- homework assignment #4, aka pair/p1
 
 ## []
