@@ -47,11 +47,12 @@ to **make an appointment**.
 	Instructor	| Joseph P. SKUDLAREK
 	Email		| jskudlarek@lclark.edu
 	Office hours|
-				| location SQRC (JR Howard 134)
-				| Mon 9:00-10:00 AM (drop in or schedule)
-				| Fri 9:00-10:00 AM	(drop in or schedule)
-				| Tue 4:00-5:00 PM 	scheduled on my calendar
-				| and otherwise 	by calendar appointment (send me email)
+				| SQRC (JR Howard 134)
+				| Lab  (Olin 305)
+				| Mon 9:00-10:00 AM SQRC (drop in or schedule)
+				| Fri 9:00-10:00 AM	SQRC (drop in or schedule)
+				| Tue 4:00-5:00 PM 	Lab if scheduled on my calendar
+				| and otherwise 	TBD by calendar appointment (send me email)
     Usual Hours | https://calendar.app.google/39ke7XHGDEjKMiSz5
 
 	TA			| Samphasnearyroth (Nero) Chua

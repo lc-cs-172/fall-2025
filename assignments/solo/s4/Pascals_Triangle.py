@@ -17,6 +17,26 @@
 ##	    1	    3       3	    1
 ##	1	4	6	4	1
 ##
+##  NB: The formatting is a key part of this assignment.
+##  
+##  Use spaces, not tabs, to get the formatting right 
+##  -- tab display is reliable.
+##
+##  The output really needs to look like this, where the columns are
+##  aligned vertically, and the number below is between the pair of
+##  numbers above.  (I've added explicit _ to represent blanks to
+##  preserve formatting)
+##  
+##  ______________________1______________________
+##  __________________1_______1__________________
+##  ______________1_______2_______1______________
+##  __________1_______3_______3_______1__________
+##  ______1_______4_______6_______4_______1______
+##  
+##  I've used a bunch of space between columns -- use what you will, but
+##  make sure the output is less than 80 columns wide, and the numbers
+##  remain distinct and don't run into each other.
+##
 ##  To generate the next line > 2
 ##    start the line with "1"
 ##    sum each pair from the line above
