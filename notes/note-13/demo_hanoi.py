@@ -1,11 +1,14 @@
-## illustration as written -- well does this work?
+## revised example -- DRY, w/ working types
+
+def hanoi_tell(start, end):
+    print(str(start) + ' -> ' + str(end))
 
 def hanoi(start, spare, end, n):
     if n == 1:
-        print(start + ' -> ' + end)
+        hanoi_tell(start, end)
     else:
         hanoi(start, end, spare, n - 1)
-        print(start + ' -> ' + end)
+        hanoi_tell(start, end)
         hanoi(spare, start, end, n - 1)
 
 ##----------------------------------------------------------------
@@ -45,7 +48,7 @@ def hanoi_run(size):
     ## clear any prior configuration
     peg.clear()
     ## create peg[0], loaded with our disks
-    peg.append([i for i in range(1,size+1)])
+    peg.append([i for i in range(size, 0, -1)])
     ## create empty peg[1] and peg[2]
     peg.append([])
     peg.append([])

@@ -13,6 +13,7 @@ Copy the program text file to your local work area.
 
 Modify the file to create a working program; be sure to follow the
 instructions in the *Assignment Description* at the top of the file.
+Those instructions are quite detailed -- there's a bunch going on here.
 
 Run the modified program and save the output to a file.
 
