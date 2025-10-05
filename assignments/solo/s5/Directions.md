@@ -5,22 +5,23 @@ recursion.
 
 ## Task
 
-On an 8x8 chessboard, find all the placements of 8 queens where none are
-under attack.
+On an 8x8 chessboard, find all the placements of 8 queens where all are
+safe.
 
 The queen, in chess, can move as far as it wants in a straight line
-across unoccupied squares either horizontally, vertically, or along any
-diagonal.  If any two queens line on the same line, then they are under
-attack.  For example, on a 4x4 chessboard with 4 queens
+along unoccupied squares horizontally, vertically, or along any
+diagonal.  If any two queens lie on the same line, then they are not
+safe -- one can capture the other.  For example, on a 4x4 chessboard
+with 4 queens
 
-queens under attack (shown with A)
+queens not safe (shown with U)
 
-		A|.|.|.
+		U|.|.|.
 		.|.|Q|.
-		A|.|.|.
-		.|.|.|A
+		U|.|.|.
+		.|.|.|U
 
-attack free placement
+safe placement
 
 		.|.|Q|.
 		Q|.|.|.

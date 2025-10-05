@@ -6,7 +6,8 @@
 ##  Using recursion, implement the function solve_eight_queens by
 ##  replacing the placeholder body of that function with CLEAN working
 ##  code.  Add your own functions in the student code section.  You may
-##  use any imports used in prior class work.
+##  use any imports used in prior class work, and any Python core
+##  functionality.
 ##
 ##  Only replace code in the student code section;
 ##    leave the rest of this file intact.
@@ -17,7 +18,7 @@
 ##  total number of successful configurations, using the following
 ##  output format.
 ##
-##    One line for each non-attacking configuration
+##    One line for each safe configuration
 ##       [5, 3, 6, 0, 7, 1, 4, 2]
 ##    which indicates that row 0 has a queen at column 5, ...
 ##    
