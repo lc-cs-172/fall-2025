@@ -1,4 +1,4 @@
-# Assignment #5: Eight Queens
+# Assignment #6: Eight Queens
 
 This assignment is designed to help you explore and learn how to use
 recursion.

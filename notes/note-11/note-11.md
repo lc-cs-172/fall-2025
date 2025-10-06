@@ -2,7 +2,6 @@
 
 ## Administrivia
 
-
 * reminder: homework #4 due today by 11:59 PM  
 
 * NB: I found a bug in graph generation  
