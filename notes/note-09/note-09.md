@@ -65,7 +65,8 @@ beyond what's described there, we've also covered
 ### want: more in-class coding
 
 Yup, we're headed in that direction -- but it takes time to cover the
-basics you need to know to learn Python and do the assignments.
+basics techniques you need to know and to learn enough Python so you can
+do the assignments.
 
 ### want: show the sorts without the baggage
 

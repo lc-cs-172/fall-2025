@@ -27,9 +27,15 @@ Copy the program and pytest text files to your local work area.
 Modify the program file to create a working program.
 
 You will need to have the pytest module installed.  To install pytest,
-in a terminal, run
+in a terminal, try
 
     python3 -m pip install pytest
+
+-or-
+
+    python3 -m pip install --user pytest
+
+[If on debian or MacOS, use --break-system-packages at your own risk.]
 
 Run the modified program under pytest and save the output to a file.
 For example,
