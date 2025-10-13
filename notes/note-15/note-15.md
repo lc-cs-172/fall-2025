@@ -10,7 +10,7 @@
   - ../../assignments/solo/s5 -- eight-queens
   - ../../assignments/solo/s6 -- guided practice with recursion and pytest
 
-## Opportunity to improving your midterm-1 score
+## Opportunity to improve your midterm-1 score
   
 #### on Monday (13-Oct-2025)
 * you can turn in 

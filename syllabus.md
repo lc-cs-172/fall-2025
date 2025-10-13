@@ -414,7 +414,7 @@ high quality learning and scholarship. Integrity failures (e.g., plagiarism,
 cheating, the deliberate misrepresentation of information) are reason enough to
 **fail** this course. Period.
 
-Again, we're not here to have you cut-and-paste ML output and claim it as your
+Again, we're not here to have you cut-and-paste AI output and claim it as your
 own -- doing so is plainly wrong, it is antithetical to responsible scholarship
 and learning, and is unacceptable.
 
