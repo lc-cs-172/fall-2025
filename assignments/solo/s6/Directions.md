@@ -42,6 +42,10 @@ For example,
 
 	pytest recursion_test.py > recursion_test.txt
 
+You should also be able to invoke pytest like this:
+
+    python3 run_pytest.py recursion_test.py > recursion_test.txt
+
 Go to this assignment in [LC-CS-172-Fall-2025](https://classroom.google.com);
 submit your ASCII text files.
 

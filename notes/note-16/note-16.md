@@ -95,15 +95,38 @@
 > Focus is on recursive nature of algorithm and time complexity.  
 > We allow ourselves to use O(n) extra storage.
 
-#### method
+#### method (updated after class w/ natural recursive version; fix typos)
 
-		if len(data) < 2: return data # already sorted
+    [natural recursive version]
+
+	def merge_sort(data):
+		""" merge sort the data, leaving result in data; return None """
+		size = len(data)
+		if size < 2: return None # already sorted
+
+		split = size//2
+		run1 = data[:split]
+		run2 = data[split:]
+
+		merge_sort(run1)
+		merge_sort(run2)
+
+		result = merge_runs(run1, run2)
+
+		## return the result in-place
+		data[:] = result
+		return None
+
+    [original iterative version, showing limited extra storage]
+
+		if len(data) < 2: return None # already sorted
         populate incoming_segments with sorted pairs of incoming data
         while len(incoming_segments) > 1
             outgoing_segments = merge_each_pair_of_segments(incoming_segments)
             incoming_segments = outgoing_segments
 		assert len(incoming_segments) == 1
-		return incoming_segments[0]
+		data[:] = incoming_segments[0]
+		return None
 
 #### See also
 
