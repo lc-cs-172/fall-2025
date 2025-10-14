@@ -46,6 +46,11 @@ You should also be able to invoke pytest like this:
 
     python3 run_pytest.py recursion_test.py > recursion_test.txt
 
+You can also run pytest under VS code.  To set that up, visit any .py
+file and configure `testing` (click on the flask icon) to use pytest.
+To run pytest, click on a little invoke icon (a triangle) at the top of
+the `testing` section in the left hand pane.
+
 Go to this assignment in [LC-CS-172-Fall-2025](https://classroom.google.com);
 submit your ASCII text files.
 
