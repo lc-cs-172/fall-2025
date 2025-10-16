@@ -88,6 +88,8 @@
 * re: recursion: sometimes it's hitting the base case to stop recursion  
   -- othertimes, it's finding the pot of gold at the end of the rainbow (eight queens)
 
+### we spent a lot of time on the board, explaining call stacks and local variables
+
 * let's review Python globals and locals, and how to declare globals
 
 ## Feedback
@@ -103,6 +105,8 @@
 
 * I'll try and do a quick review of what we talked about last time  
   -- today it was merge-sort and recursion
+
+## ***--->>> we only got this far today <<<---***
 
 ## Introduction to Object Oriented Programming in Python
 
