@@ -19,7 +19,12 @@ placement in that row also works.
 
 """
 
-## Here's what the advice looks like in running Python code
+## Here's what the advice looks like in running Python code.
+
+################################################################
+## NB: This is teaching code -- it is very verbose.
+##     I would not write code like this for production.
+################################################################
 
 size = 4                        # size of the chessboard -- start small if debugging
 queen_in_col = [None] * size    # given the row number, it tells us which column has the queen
@@ -62,5 +67,42 @@ def solve_eight_queens():
     place_all_queens(0)
     print(safe_placements)      # FIXME: we need to print one safe configuration per line
     ## TODO: print out the summary line
+
+##================================================================
+##================================================================
+##================================================================
+
+## here's another way of looking at the problem by using an explicit
+## 2-dimentional board, indexed by row and column, containing characters
+## to represent the position of the queens.  It may be easier to
+## conceptualize what's going on, rather than tracking placement
+## information via 1-dimentional arrays like queen_in_col.
+
+U = 'U'
+Q = 'Q'
+_ = '.'
+
+## examples taken from Directions.md
+
+bogus    = [None]*size
+bogus[0] = [U,_,_,_]
+bogus[1] = [_,_,Q,_]
+bogus[2] = [U,_,_,_]
+bogus[3] = [_,_,_,U]
+
+valid    = [None]*size
+valid[0] = [_,_,Q,_]
+valid[1] = [Q,_,_,_]
+valid[2] = [_,_,_,Q]
+valid[3] = [_,Q,_,_]
+
+def print_board(board):
+    print();
+    for row in board:
+        print(*row,sep='|')
+    print();
+
+print_board(bogus)
+print_board(valid)
 
 ##[]##    
