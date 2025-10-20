@@ -85,7 +85,9 @@
 * logs are constant multiples of each other  
   for example, $\log_b(x)= c * \log_2(x)$  
 
-  Don't just take my word for it, let's see why that's true.
+  Don't just take my word for it, let's see why that's true.  
+  NB: this is *optional enrichment*  
+  -- I will not ask you to reproduce this proof.
   
   <!-- math in GFM markdown is a pain in the ass, -->
   <!--     as it differs from my local GFM support via pandoc -->

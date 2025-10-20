@@ -76,7 +76,7 @@
   
 * logs are constant multiples of each other  
   for example, $\log_b(x)= c * \log_2(x)$  
-  proof was in prior lecture notes
+  NB: *optional enrichment* proof was in prior lecture notes
 
 * Q/ what do we mean when we say cost(n) = O(n log n))?  
   A/ that cost(n) <= n log(n) **EVENTUALLY**

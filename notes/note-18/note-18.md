@@ -52,7 +52,7 @@
 
 * law of diminishing returns
 
-* extra credit re: Amdahl's Law
+* *optional enrichment* re: Amdahl's Law
   - limits on absolute improvement
 
 	"the overall performance improvement gained by optimizing a single part of a
