@@ -60,9 +60,9 @@ You should also be able to invoke pytest like this:
 You can also run pytest under VS code.
 
 To set up pytest under VS code: visit any .py file and configure `testing`
-(click on the flask icon) to use pytest.  To run pytest, click on a little
-invoke icon (a triangle) at the top of the `testing` section in the left hand
-pane, or on the banner above the *_test.py file.
+(click on the flask icon) to use *pytest* (not unittest).  To run pytest, click
+on a little invoke icon (a triangle) at the top of the `testing` section in the
+left hand pane, or on the banner above the *_test.py file.
 
 Go to this assignment in [LC-CS-172-Fall-2025](https://classroom.google.com);
 submit your ASCII text files.
@@ -72,7 +72,7 @@ submit your ASCII text files.
 This information is for my benefit, you shouldn't need to know this -- the
 pytest invocation recipes above should just work.
 
-<!-- I could not make this table work on MacOS, so I used an alternative use pre-formatted solution-->
+<!-- I could not make this table work on MacOS, so I used an alternative -- use -- pre-formatted solution -->
 
 		-------------------	|	----------------		
 		system				|	pytest location
