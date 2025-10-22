@@ -314,8 +314,18 @@ policy if needed to improve effectiveness.
 * Individual homework assignments: 	30 points
 * Group programming assignments: 	28 points
 * Exams: 							30 points
+* Extra Credit:						10 points
 
 Group programming assignments will be done in pairs.
+
+### Extra Credit
+
+Most assignments will have extra credit portions, clearly identified.  
+It's extra credit -- you don't need to do it.  
+It's extra effort -- for both of us.  
+To keep the effort manageable, it's a package deal with modest feedback.  
+If you attempt it, and do it well, there is extra credit.  
+If you attempt it, and don't do it well, there's little to no extra credit.
 
 ### Exams
 
