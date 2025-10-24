@@ -27,7 +27,7 @@
 * If you attempt it, and do it well, there is extra credit.  
 * If you attempt it, and don't do it well, there's little to no extra credit.
 
-## Midterm Topics
+## Midterm-2 Topics
 
   - list comprehension
   - f-strings, including simple formatting specifications
