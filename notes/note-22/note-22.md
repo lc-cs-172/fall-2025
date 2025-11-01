@@ -71,15 +71,15 @@ print(f(2,3))
 
 ## OOP in Python
 
-* __init__
-* __repl__
-* __str__
-* __len__
-* __iter__ (1st pass)
+* `__init__`
+* `__repl__`
+* `__str__`
+* `__len__`
+* `__iter__` (1st pass)
 
 * [Pythonorama OOP classes](https://github.com/alainkaegi/pythonorama/blob/main/oop/classes.md)
 * [Pythonorama OOP methods](https://github.com/alainkaegi/pythonorama/blob/main/oop/methods.md)
-* [Pythonorama OOP __magic__](https://github.com/alainkaegi/pythonorama/blob/main/oop/magic.md)
+* [Pythonorama OOP `__magic__`](https://github.com/alainkaegi/pythonorama/blob/main/oop/magic.md)
 
 ## Live-coding
 

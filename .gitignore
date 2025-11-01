@@ -1,3 +1,3 @@
 *.lprof
-_IGNORE_*
+IGNORE-*
 profile_output*.txt
