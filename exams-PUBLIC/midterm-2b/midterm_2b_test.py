@@ -87,7 +87,7 @@ def test_big_theta():
     assert type(N) == int
     assert N > 1
     for n in range(1,N+1):
-        assert f(n) >= g(n)
+        if n < N: assert f(n) > g(n)
         assert f(n) < f(n+1)
         assert g(n) < g(n+1)
     for n in range(N+1,N*3):

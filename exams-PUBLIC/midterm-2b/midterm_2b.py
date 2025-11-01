@@ -133,13 +133,13 @@ class List:
 
 ##----------------------------------------------------------------
 
-big_theta_breakpoint = 0
+big_theta_breakpoint = 3
 
 def f(n):
-    return n
+    return n/2
 
 def g(n):
-    return n
+    return n/3
 
 ##----------------------------------------------------------------
 

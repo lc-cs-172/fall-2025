@@ -55,18 +55,27 @@ formatted -- form follows function.
     For full extra credit on this problem, make sure you update the `verify`
     function to check the length.
 
-1.  $\Theta$ is big-theta. Every function $f(n) = \Theta(n*\log_2(n))$
-    is always less than than              $g(n) = \Theta(n^2)$
-    for all values of $n > N$ for some N.
+1.  TL;DR: prove by example that $f(n) \in O(n*\log n)$ is not always better than
+    $g(n) \in O(n^2)$.
+
+    Note that we're talking about functions in a given order; for example,
+    function $f(n) = n^2/4$ is in $O(n^2)$.
+
+    $\Theta$ is big-theta.  Recall that every function in $\Theta(h(n))$ is also
+    in $O(h(n))$.
+
+    Every function $f(n) \in \Theta(n*\log_2(n))$ is always less than than $g(n) \in
+    \Theta(n^2)$ for all values of $n > N$ for some N.
 
 	A function $f$ is strictly monotonically increasing if $f(y) > f(x)$ whenever
     $y > x$.  For example, $n*\log_2(n)$ and $n^2$ are both strictly
     monotonically increasing for $n\ge1$.
 
     For this problem, only consider integers $n > 0$.  Define strictly
-    monotonically increasing functions $f(n) = \Theta(n*\log_2(n))$ and $g(n) =
-    \Theta(n^2)$ and integer constant $N > 1$ such that $f(n) \ge g(n)$ for $n$
-    in the closed interval $[1,N]$ and $f(n) < g(n)$ for all $n > N$.
+    monotonically increasing functions $f(n) \in \Theta(n*\log_2(n))$ and $g(n)
+    \in \Theta(n^2)$ and integer constant $N > 1$ such that $f(n) > g(n)$ for
+    all $n < N$, and $f(n) < g(n)$ for all $n > N$.  Note that comparing $f(N)$
+    with $g(N)$ is not specified.
 
     For full extra credit on this problem, graph the functions $f$ and $g$ in
 	the interval $[1,2N]$ and submit the resulting `midterm-2b.png` file.
