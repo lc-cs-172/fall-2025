@@ -279,8 +279,12 @@ See also
 ## Grade Scale
 
 I plan to use the following scale to compute your final grade.  NB: I don't
-grade on a curve (i.e., Gaussian distribution) -- you each get the grade you
-earn.
+grade on a curve (i.e., using a Gaussian or Normal distribution) -- you each get
+the grade you earn.
+
+I will adjust the scoring/mapping as necessary to reflect reality.  For example,
+if the scores end up under-representing your accomplishments, I will raise the
+scores; I do expect at least some students will receive a final grade of A.
 
 Grade            | Point Range
 -|-
@@ -331,10 +335,10 @@ If you attempt it, and don't do it well, there's little to no extra credit.
 
 There will be two midterms and one final exam, with weights 8/10/12.  The
 midterms will have about 10 questions each; the final will have about 20
-questions.  Each midterm will cover all the preceding material, the final is
+questions.  Each midterm will focus on recent class material; the final is
 comprehensive.
 
-The exams are closed-book pen-and-paper tests given in the classroom -- No
+Most exams are closed-book pen-and-paper tests given in the classroom -- No
 calculators, no smart phones or watches, no computers or tablets, no notes.
 
 Sources for exam questions include
