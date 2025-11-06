@@ -72,7 +72,7 @@ print(f(2,3))
 ## OOP in Python (revisit)
 
 * `__init__`
-* `__repl__`
+* `__repr__` (not repl)
 * `__str__`
 * `__len__`
 * `__iter__` (more to come)

@@ -12,4 +12,7 @@ def showme():
     for x in xs:
         print(f'{x=} {p(x)=}')
 
+
+
+
 []
