@@ -1,4 +1,4 @@
-# LC-CS-172 Topics for Mon 03-Nov-2025
+# LC-CS-172 Topics for Wed 05-Nov-2025
 
 ## Today's Hot Topics
 

@@ -54,6 +54,7 @@ to **make an appointment**.
 				| Tue 4:00-5:00 PM 	Lab if scheduled on my calendar
 				| and otherwise 	TBD by calendar appointment (send me email)
     Usual Hours | https://calendar.app.google/39ke7XHGDEjKMiSz5
+    Entire View	| https://calendar.google.com/calendar/u/0?cid=bGMyNS0xMTE4QGxjbGFyay5lZHU
 
 	TA			| Samphasnearyroth (Nero) Chua
 	Email		| samphasnearyrothc@lclark.edu
