@@ -25,7 +25,7 @@ def test_timed():
 ==== test_timed underway ====
 """)
 
-    max_time_allowed = 3600
+    max_time_expected = 3600
 
     time_starting = dut.time_starting
     time_finished = dut.time_finished
@@ -41,11 +41,11 @@ def test_timed():
     assert clock_head < clock_tail
 
     clock_used = clock_tail - clock_head
-    if 0 < clock_used and clock_used <= max_time_allowed:
+    if 0 < clock_used and clock_used <= max_time_expected:
         pass
     else:
         print("================================================================")
-        print("Warning: total time taken %d exceeds maximum allowed %d" % (clock_used,max_time_allowed))
+        print("Warning: total seconds taken %d exceeds maximum expected %d" % (clock_used,max_time_expected))
         print("================================================================")
 
     time_now = time.asctime()

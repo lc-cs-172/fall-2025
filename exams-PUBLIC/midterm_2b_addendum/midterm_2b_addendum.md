@@ -45,14 +45,14 @@ Don't open those files until you're ready to start the exam.
 		
 ## Detailed Logistics
 
-* track your session start and session stop times as returned by Python's
-  time.asctime(), and plug them into variables `time_starting` and
-  `time_finished` -- just make time_finished an hour later than time_starting
-  while debugging.
+* track your session start and session stop times 
+* run `pytest -s`; time is printed at the start of the output
+* set the variable `time_starting`
 * identify any resources you used in the variable `resources_used`
 * modify `midterm_2b_addendum.py` to solve each problem
-* ensure `midterm_2b_addendum_test.py` passes using pytest
-* run pytest one more time after you update `time_finished`
+* ensure `midterm_2b_addendum_test.py` passes using `pytest -s`
+* update the variable `time_finished` with the current time
+* run pytest within 5 minutes after you update `time_finished`
 * store final pytest output in `midterm_2b_addendum_test.txt`
 
 ### submit in Google Classroom

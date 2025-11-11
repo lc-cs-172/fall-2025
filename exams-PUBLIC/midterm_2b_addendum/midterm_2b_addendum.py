@@ -49,7 +49,8 @@ def problem_2_find_minimum(p, lo, hi, tol=1e-7):
     x2.  We know x1 is close enough to the minimum if x0 is close enough
     to x2.
 
-    Using recursion, find the interval holding the minimum, and return (x0,x2)
+    Using recursion with bisection, find the interval holding the
+    minimum, and return (x0,x2)
 
     """
     return (0,0)
@@ -92,7 +93,12 @@ def problem_3_fast_avg_get():
 
     Purpose: demonstrate that constants matter, where we prove by
     example that sometimes f(x) in O(n lg n) can be greater than g(x) in
-    O(n^2).
+    O(n^2) for hundreds of values.
+
+    For this problem, only consider integers n > 0.  N is a constant,
+    set to PROBLEM_4_BREAKPOINT.  Find other constants (scale,offset)
+    such that f(n) > g(n) for all n < N, and f(n) < g(n) for all n > N.
+    Note that comparing f(N) with g(N) is not specified.
 
     Implement problem_4_f() and problem_4_get_constants().
     Leave problem_4_g() alone.
