@@ -4,41 +4,83 @@
 
 * midterm-2b addendum
 * citing references
-* iterators
+* visitor pattern
 * pair programming w/ BST
+* --- we got this far ---
+* iterators
 
 ## administrivia
 
 * please mark your attendance in Google Classroom for today
 
-* FYI: assignment #9 due date is **not** pushed out  
-  -- you will get 90 more minutes in class for the pair programming this week
+* FYI: assignment #9 due date *is pushed out* to Mon 17-Nov-2025
+  - you will get 90 more minutes in class for the pair programming this week
+  - [we had 20 minutes today]
 
 ## midterm-2b addendum
 
-* take-home
-* timed -- intended for max one hour
+* **optional** -- with limited upside
+
+* take-home programming assignment
+
 * ajar-book
-  - development environment (Python3, VS code, PyCharm)
+  - use your development environment (Python3, VS code, PyCharm)
   - no web searches
   - no AI 
 
-#### No AI!!!  No web searches!!!
+#### ==== *** No AI *** ====
+#### ==== No web searches ====
 
-### `***--->>> do NOT open midterm_2b_addendum.py until you start the exam <<<---***`
 
+* timed -- intended for max one hour
 * due Tue 11-Nov-2025 by 11:59 *PM*
 * due Wed 12-Nov-2025 by 11:59 *PM* by ***prior*** request
 
+### `***--->>> do NOT open midterm_2b_addendum.py <<<---***`
+### `***--->>> until you start the exam <<<---***`
+
 ## citing references
 
-Really ... you need to do this.  Academic integrity requires it.
+Really ... you need to do this.
+
+**Academic Integrity** requires it.
+
+It is *dishonest* to not cite your sources.
 
 ## clean code
 
 ###	```Document your code.```
 ### ```How can we know if the code is right unless we know what the code is supposed to do?```
 ###	```Document your code.  But not excessively.  All comments should add value.```
+
+## visitor pattern
+
+* visit method on collection
+* visitor function to operate on each element
+* examples
+  - print values in order
+  - find average of items
+  - verify BST integrity
+
+### why use objects
+
+#### Issues w/ find-the-average visitor
+
+* needs [global] storage
+* needs many related functions
+* names are disjoint, related by convention
+* pollutes global namespace
+
+#### Solution: Encapsulate -- Use an Object!
+
+* avoid global storage (aka `state`) -- unique to each object
+* functions all go together, stay together, consistent naming
+* related names of storage and functions are all together
+* avoids namespace pollution -- access names through object
+
+# ***--->>> You Are Here <<<---***
+
+We got this far today.
 
 ## iterators
 
