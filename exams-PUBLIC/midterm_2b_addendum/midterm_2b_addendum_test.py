@@ -106,14 +106,19 @@ def test_problem_2():
 
 def test_problem_3():
 
-    items = []
-    dut.problem_3_fast_avg_init()
-    for item in ( i*2 - 41 for i in range(20) ):
-        items.append(item)
-        dut.problem_3_fast_avg_add(item)
-        want = sum(items)/len(items)
-        have = dut.problem_3_fast_avg_get()
-        assert abs(have-want) < 1e-13
+    ## ensure we can call it multiple times
+    for lather_rinse_repeat in range(3):
+
+        items = []
+        dut.problem_3_fast_avg_init()
+        assert 0 == dut.problem_3_fast_avg_get()
+
+        for item in ( i*2 - 41 for i in range(20) ):
+            items.append(item)
+            dut.problem_3_fast_avg_add(item)
+            want = sum(items)/len(items)
+            have = dut.problem_3_fast_avg_get()
+            assert abs(have-want) < 1e-13
         
 ##----------------------------------------------------------------
 

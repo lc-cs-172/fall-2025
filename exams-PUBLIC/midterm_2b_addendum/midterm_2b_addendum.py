@@ -50,7 +50,7 @@ def problem_2_find_minimum(p, lo, hi, tol=1e-7):
     to x2.
 
     Using recursion with bisection, find the interval holding the
-    minimum, and return (x0,x2)
+    minimum, and return (x0,x2).
 
     """
     return (0,0)
@@ -69,6 +69,10 @@ def problem_2_find_minimum(p, lo, hi, tol=1e-7):
 
     Yes, that's right, O(1) storage -- you may not store every value
     added -- you can only use a constant amount of storage.
+
+    Note that the routines can be called in any order after the initial
+    init routine.  That's why this is considered dynamically maintaining
+    the current average.
 
     Find and implement a way to incrementally maintain the current
     average.
