@@ -125,7 +125,6 @@ def test_problem_3():
 def test_problem_4():
 
     ## make sure we got the right f
-    ## XXX: something was way whacky when we went math.log(x)*math.log(2) instead of math.log2(x) ... 
     want_f = lambda x: scale*(x*math.log2(x)) + offset
     have_f = lambda x: dut.problem_4_f(x, scale, offset)
     for scale in (10**d for d in range(-3,3)):

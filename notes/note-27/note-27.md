@@ -5,12 +5,14 @@
 * midterm-2b addendum -- was *optional* -- with limited upside
 * why use objects
 * visitor pattern (details)
+* ---- we got this far today ----
 * iterators (simple Python example)
 * pair programming w/ BST 
 
 ## administrivia
 
 * please mark your attendance in Google Classroom for today
+  [didn't happen -- attendence assignment was not posted today]
 
 * FYI: assignment #9 due date *is pushed out* to Mon 17-Nov-2025
   - promised 2 hours in-class (120 minutes)
@@ -64,6 +66,8 @@
 * use a closure (Ooh!)
 
 [demo_visitor_using_state.py](demo_visitor_using_state.py)
+
+# `***--->>> we got this far today <<<---***`
 
 #### references for Design Patterns
 

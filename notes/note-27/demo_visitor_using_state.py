@@ -69,6 +69,12 @@ class Dynamic_Mean:
     ## NB: __init__ not needed!
     ##     we initialize our object attributes from the class attributes; we also support reset
 
+    def __repr__(self):
+        return f'[REPR] Dynamic_Mean({self._count=} {self._total=} {self._mean=})'
+
+    def __str__(self):
+        return f'[STR] Dynamic_Mean({self._count=} {self._total=} {self._mean=})'
+
     def __call__(self, item):
         self._count += 1
         self._total += item
@@ -83,13 +89,34 @@ class Dynamic_Mean:
 def demo_visit_using_object():
     starting('==== demo_visit_using_object ====')
 
-    v = Dynamic_Mean()
-    visit(data, v)
-    print(f'{v._count=} {v._total=} {v._mean=}')
+    trio = range(1,4)
 
-    v.reset()
-    visit(data, v)
-    print(f'{v._count=} {v._total=} {v._mean=}')
+    ## using v1 and v2 to ensure that different objects stay separated
+    
+    v1 = Dynamic_Mean()
+    v2 = Dynamic_Mean()
+
+    def emit_both():
+        print(f'{v1=!r}')                       # repr
+        print(f'{v2=!r}')
+        print(f'{v1=!s}')                       # str
+        print(f'{v2=!s}')
+
+    print('visit(data, v1)')
+    visit(data, v1)
+    emit_both()
+
+    print('visit(trio, v2)')
+    visit(trio, v2)
+    emit_both()
+
+    print('v1.reset()')
+    v1.reset()
+    emit_both()
+
+    print('visit(data,v1)')
+    visit(data, v1)
+    emit_both()
     
 ##================
 ##================
