@@ -58,33 +58,34 @@ def demo_simple_ugly_visitor():
 
 class Dynamic_Mean:
 
-    ## define and initialize all our attributes
-    ## I really like to see them all in one place,
-    ## so I know what I'm working with
+    ## Define and initialize all our attributes.
+    ## I really like to see all the object attributes defined in one place
+    ## so I know what all of them are.
 
-    _count = 0
-    _total = 0
-    _mean  = 0
+    ## I had marked these attributes as 'private' with a leading underbar,
+    ## but I'm expected the user to reach in and read their values,
+    ## so that makes them public.  Too bad I can't make 'em readonly.
+
+    count = 0
+    total = 0
+    mean  = 0
 
     ## NB: __init__ not needed!
-    ##     we initialize our object attributes from the class attributes; we also support reset
+    ##     we let Python automatically initialize our object attributes from the class attributes
+    ##     we also support reset, which will set them to 0
 
     def __repr__(self):
-        return f'[REPR] Dynamic_Mean({self._count=} {self._total=} {self._mean=})'
-
-    def __str__(self):
-        return f'[STR] Dynamic_Mean({self._count=} {self._total=} {self._mean=})'
+        return f'Dynamic_Mean({self.count=} {self.total=} {self.mean=})'
 
     def __call__(self, item):
-        self._count += 1
-        self._total += item
-        self._mean = self._total/self._count
+        self.count += 1
+        self.total += item
+        self.mean = self.total/self.count
 
     def reset(self):
-        ## NB: we could also use Dynamic_Mean.__init__(self)
-        self._count = 0
-        self._total = 0
-        self._mean  = 0
+        self.count = 0
+        self.total = 0
+        self.mean  = 0
 
 def demo_visit_using_object():
     starting('==== demo_visit_using_object ====')
@@ -93,14 +94,15 @@ def demo_visit_using_object():
 
     ## using v1 and v2 to ensure that different objects stay separated
     
+    def emit_both():
+        ## since we do not change them, v1 and v2 are our outer variables, not local variables for this function
+        print(f'{v1=!r}') # FYI: !r means use the __repr__ string representation
+        print(f'{v2=!s}') # FYI: !s means use the __str__ string representation which defaults to __repr__
+
     v1 = Dynamic_Mean()
     v2 = Dynamic_Mean()
-
-    def emit_both():
-        print(f'{v1=!r}')                       # repr
-        print(f'{v2=!r}')
-        print(f'{v1=!s}')                       # str
-        print(f'{v2=!s}')
+    print('create both objects')
+    emit_both()
 
     print('visit(data, v1)')
     visit(data, v1)
@@ -114,6 +116,9 @@ def demo_visit_using_object():
     v1.reset()
     emit_both()
 
+    print('visit(data,v1)')
+    visit(data, v1)
+    emit_both()
     print('visit(data,v1)')
     visit(data, v1)
     emit_both()
