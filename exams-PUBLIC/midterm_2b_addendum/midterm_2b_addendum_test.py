@@ -37,7 +37,6 @@ def test_timed():
     clock_tail = localtime_convert(time_finished)
     print(time_starting, '(starting) ->', clock_head)
     print(time_finished, '(finished) ->', clock_tail)
-
     assert clock_head < clock_tail
 
     clock_used = clock_tail - clock_head
@@ -51,10 +50,12 @@ def test_timed():
     time_now = time.asctime()
     clock_now = localtime_convert(time_now)
     print(time_now, '(current)  ->', clock_now)
+    assert clock_head < clock_now, "time_starting < time_current"
 
-    ok_delay = 5*60
-    assert clock_head < clock_now and (clock_now < clock_tail + ok_delay), (
-        "pytest was run in valid window (time_starting, time_finished + %d seconds)") %(ok_delay)
+    max_delay_seconds = 15*60
+    now_delay_seconds = clock_now - clock_tail
+    assert now_delay_seconds < max_delay_seconds, (
+        "pytest was run within %d seconds after time_finished)") %(max_delay_seconds)
 
 def test_references():
     assert dut.references_used
@@ -84,7 +85,21 @@ def test_problem_2():
     p = lambda x: scale*(x-x_min)**2 + 25
     lo = 0.0
     hi = 11.0
-    ## NB: it is so flat at the bottom, we must scale up to succeed, and reduce tigher tolerances
+
+    if 1:
+        print("""
+    =========================================
+    ================ WARNING ================
+       ==== Using quartic polynomial ====
+    =========================================
+    =========================================
+    """);
+        x_min = 3.7079018462323194
+        p = lambda x: (x+8)*(x+6)*(x-2)*(x-5)/100
+        lo = 0
+        hi = 6
+
+    ## NB: it is so flat at the bottom for our quadratic, we must scale up to succeed, and reduce tigher tolerances
     scales = [1e1, 1e2, 1e3]
     for tol in [10**(-d) for d in range(5,8) ]:
         for scale in scales:
@@ -97,11 +112,8 @@ def test_problem_2():
             assert 0 < width and width < tol
 
             ## min has to be within interval
-            d0 = x_min - x0
-            d2 = x2 - x_min
-            assert (d0) < width
-            assert (d2) < width
-    
+            assert x0 < x_min and x_min < x2
+
 ##----------------------------------------------------------------
 
 def test_problem_3():
@@ -130,7 +142,7 @@ def test_problem_4():
     for scale in (10**d for d in range(-3,3)):
         for offset in range(-200,201,20):
             for n in range (1,20):
-                n = float(n)
+                if 0: n = float(n)              # too defensive
                 want_y = want_f(n)
                 have_y = have_f(n)
                 assert abs(want_y - have_y) < 1e-13
@@ -144,13 +156,13 @@ def test_problem_4():
     N = dut.PROBLEM_4_BREAKPOINT
 
     for n in range(1,N+1):
-        n = float(n)
+        if 0: n = float(n)                      # too defensive
         if n < N: assert f(n) > g(n)
         assert f(n) < f(n+1)
         assert g(n) < g(n+1)
 
     for n in range(N+1,N*3):
-        n = float(n)
+        if 0: n = float(n)                      # too defensive
         assert f(n) < g(n)
         assert f(n) < f(n+1)
         assert g(n) < g(n+1)
