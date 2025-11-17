@@ -21,15 +21,15 @@
 
 Each assignment is designed with a purpose.
 
-Please, observe, and follow, the requested/required submission criteria.
+Please, observe, and follow, the submission criteria.
 
-I see folks misundertanding or ignoring the clear guidance and stateed purpose
+I see folks misundertanding or ignoring the clear guidance and stated purpose
 of the assignments.
 
-If I ask you make an omlette, and you make a souffle -- sure, a souffle is
-harder -- but that's not the point -- can you make a good omlette?  We need a
-good substantial main course omlette -- not a fancy optional dessert course
-souffle -- we need the main meal.
+If I ask you make an omelet, and you make a souffle -- sure, a souffle is harder
+-- but that's not the point -- can you make a good omelet?  We need a good
+substantial main course omelet -- not a fancy optional dessert course souffle --
+we need the main meal.
 
 ## rules of thumb (revised)
 
@@ -68,14 +68,18 @@ souffle -- we need the main meal.
 
 * global variables (UGH!)
 * use objects (Yay!)
-* use a closure (Ooh!)
+* use a closure (Ooh! Ahh ... special ... enrichment)
 
 [demo_visitor_using_state.py](demo_visitor_using_state.py)
 
 ## One Version of the Truth
 
-* Dynamic_Mean: re-uses reset()
-* BST Node search(): used for both lookup and insert
+Applies in many regards.  Here are two examples.
+
+* Dynamic_Mean:  
+  re-uses `reset()`
+* BST Node private API `_search()`:  
+  used for both public APIs `lookup()` and `insert()`
 
 ## iterators
 
@@ -102,17 +106,18 @@ souffle -- we need the main meal.
 ## why parent pointers in our BST
 
 * not strictly necessary, but I find it helps ... a lot ...
-  - alternative is to track path from root w/ stable tree
+  - alternative is to maintain path from root to node in *stable* tree
 
 * advantages
   - debugging -- can find all neighbors, and even the whole tree
   - can always find root with walk up, given one node 
-  - simple iterators if not Python (`yield` took 10 years to add)
-  - allows tree modifications during traversal 
+  - enables trivial iterator (if not Python -- and `yield` took 10 years)
+  - allows tree modifications during traversal  
+    NB: often, iterators are undefined if underlying data structure changes
 
 # `***--->>> yield in-class programming <<<---***`
 
-### Python iterator gory details (enrichment)
+### Python iterator gory details (coming enrichment)
 
   - re: functions (aka routine, method)
     - wo/ state (pure)
