@@ -24,7 +24,7 @@ Don't open those files until you're ready to start the exam.
     and the class websites (classroom, github, group)
   - limited access to notes: personal and class notes only
   - allowed to use a personal calculator
-  - NOT allowed to use Pythonorama
+  - allowed to use Pythonorama
   - NOT allowed to use AI at all
   - NOT allowed to do web searches
   - **must** cite references used

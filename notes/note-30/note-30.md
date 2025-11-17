@@ -1,61 +1,48 @@
-# LC-CS-172 Topics for Fri 14-Nov-2025
+# LC-CS-172 Lesson Plan for Mon 17-Nov-2025
 
 ## Today's Hot Topics
 
-* midterm-2b w/ addendum
-* You need to know
-* returning a value from a visit
-* references
-* #9 BST related details
+* follow the recipe ... please
+* revised rules of thumb
+* returning a value from a visitor
+* one version of the truth
 * iterators (simple Python example)
+* why parent pointers in our BST
 * pair programming w/ BST 
 
 ## administrivia
 
 * please mark your attendance in Google Classroom for today
 
-* FYI: assignment #9 due date *is pushed out* to Mon 17-Nov-2025
-  - pair programming -- expect 30 min today, 30 on Monday
+* FYI: assignment #9 due date *is pushed out* to Wed 19-Nov-2025
+  - pair programming -- expect 30 min today, 30 on Wednesday
 
-## midterm-2b w/ addendum
+## follow the recipe ... please
 
-![midterm_2b-scores](midterm_2b-scores.png)
+Each assignment is designed with a purpose.
 
-## You need to know
+Please, observe, and follow, the requested/required submission criteria.
 
-### Python details and quirks
+I see folks misundertanding or ignoring the clear guidance and stateed purpose
+of the assignments.
 
-* there are **class** *attributes* and **object** *attributes*
-  - recall a class defines a Type  
-    an object is an instance of a Type
+If I ask you make an omlette, and you make a souffle -- sure, a souffle is
+harder -- but that's not the point -- can you make a good omlette?  We need a
+good substantial main course omlette -- not a fancy optional dessert course
+souffle -- we need the main meal.
 
-* always use `__init__` to initialize -- quirks abound
-
-* list comprehension is a **distinguished term**
-
-  `[ i for i in range(1,limit+1) if is_special(i) ]`
-
-XXX demo list iteration
-
-### logarithm matters
-
-* mathematicians, engineers, computer scientists
-
-* in Python: log() vs. log10() vs. log2()
-
-* in Desmos: ln() vs. log() vs. $\log_2()$
-
-* lg() is $\log_2()$
-
-### rules of thumb
+## rules of thumb (revised)
 
 * cf. [demo_visitor_using_state.py](demo_visitor_using_state.py)
 
 		## **CAUTION**
 		##     __init__ is not needed *if* we let Python automatically
-		##     initialize our object attributes from the class attributes
-		##     -- but there are quirks I have not yet worked out
-		##     
+		##     ***APPEAR*** 
+		##     to initialize our object attributes from the class attributes
+		##     -- but there are quirks
+		##     -- THAT'S NOT WHAT HAPPENS
+		##	   -- Keep it Simple, Simon (KISS) aka Keep it Simple, Stupid ...
+		##
 		##  **KISS**
 		##     Simple is good -- and here's our good simple rule of thumb:
 		##     ================================================================
@@ -85,41 +72,10 @@ XXX demo list iteration
 
 [demo_visitor_using_state.py](demo_visitor_using_state.py)
 
-## references
+## One Version of the Truth
 
-Mythical Man-Month, The: Essays on Software Engineering, Anniversary Edition Anniversary Edition
-by Frederick Brooks Jr. (Author)
-
-![The Mythical Man-Month](MythicalManMonth.png)
-
-Design Patterns: Elements of Reusable Object-Oriented Software 1st Edition by
-Erich Gamma (Author), Richard Helm (Author), Ralph Johnson (Author), John
-Vlissides (Author), Grady Booch (Foreword)
-
-![Design Patterns](Design_Patterns.png)
-
-A Pattern Language: Towns, Buildings, Construction (Center for Environmental
-Structure Series) by Christopher Alexander (Author), Sara Ishikawa (Author),
-Murray Silverstein (Author), Max Jacobson (Author), Ingrid Fiksdahl-King
-(Author), Shlomo Angel (Author)
-
-![A Pattern Language](A_Pattern_Language.png)
-
-## #9 BST related details
-
-### **outside** API vs. **inside** API
-* outside lookup() vs. inside search()
-* diagram: divide the world into two parts
-  - outside and inside
-
-### maleable assignment
-* e.g., return (key,value) on lookup()
-
-### conception vs. execution
-* just because you *can* does not mean you *should*
-* search() does not (and should not)  be _implemented_ recursively
-
-# `***--->>> we got this far today <<<---***`
+* Dynamic_Mean: re-uses reset()
+* BST Node search(): used for both lookup and insert
 
 ## iterators
 
@@ -128,7 +84,8 @@ Murray Silverstein (Author), Max Jacobson (Author), Ingrid Fiksdahl-King
 ### simple Python example
 
 * Consider our simple linked list
-* Uses fascinating new feature -- **yield**
+* Uses fascinating new Python feature -- **yield**
+  - (`yield` took 10 years to be added to Python -- 1991 to 2001)
 
 	```
     def __iter__(self):
@@ -142,14 +99,18 @@ Murray Silverstein (Author), Max Jacobson (Author), Ingrid Fiksdahl-King
   - [demo_linked_list_iter.py](demo_linked_list_iter.py)
   - [demo_linked_list_iter_test.py](demo_linked_list_iter_test.py)
 
-  + why parent pointers
-    - debugging -- can find whole tree
-	- can always find root with walk up, given just node 
-	- simple iterators if not Python (`yield` took 10 years to add)
-    - allows tree modifications during traversal
-	- alternative is to track path from root w/ stable tree
+## why parent pointers in our BST
 
-# `***--->>> yield to in-class programming <<<---***`
+* not strictly necessary, but I find it helps ... a lot ...
+  - alternative is to track path from root w/ stable tree
+
+* advantages
+  - debugging -- can find all neighbors, and even the whole tree
+  - can always find root with walk up, given one node 
+  - simple iterators if not Python (`yield` took 10 years to add)
+  - allows tree modifications during traversal 
+
+# `***--->>> yield in-class programming <<<---***`
 
 ### Python iterator gory details (enrichment)
 
