@@ -44,7 +44,7 @@
 
   * `__iter__`	(iterable)
   * `__next__`	(iterator)
-  * iter(iterable) returns iterator
+  * `iter(iterable)` returns iterator
 
 * generator *function*
 

@@ -1,4 +1,42 @@
-print('\n==== Purpose: demo simple Python iterators ====')
+print('\n==== Purpose: demo "simple" Python iterators ====')
+
+"""
+                                                                               
+ ######  #    #  #####      #     ####   #    #  #    #  ######  #    #   #####
+ #       ##   #  #    #     #    #    #  #    #  ##  ##  #       ##   #     #  
+ #####   # #  #  #    #     #    #       ######  # ## #  #####   # #  #     #  
+ #       #  # #  #####      #    #       #    #  #    #  #       #  # #     #  
+ #       #   ##  #   #      #    #    #  #    #  #    #  #       #   ##     #  
+ ######  #    #  #    #     #     ####   #    #  #    #  ######  #    #     #  
+                                                                               
+
+You are not responsible for knowing the details of this demo code.
+
+It is enrichment.  You need to be exposed, you need to know it exists,
+but you don't need to know it cold.  
+
+================================================================
+You will be tested on iterators and yield.
+You won't be tested on the gory details of iter() and __next__().
+================================================================
+
+You am not being trained as Python language lawyers
+-- you are being taught computer science.
+
+Python iteration semantics are pretty complicated on first exposure --
+there are lots of important tiny details --
+what's a function, what's an iterator, what's a callable,
+there are multiple flavors of iter(),
+there are sentinels vs. exceptions to terminate iteration ...
+and there are functions that return functions,
+there are closures.
+
+Python is still growing and changing for almost 35 years.
+Python needs it.
+
+It's more than we need.  We'll stick to basics.
+
+"""
 
 master = [3, 2, 1]
 

@@ -135,15 +135,15 @@ def main():
     hi = 8
     tree = Tree()                               # empty tree
     tree._root = build_subtree(lo,hi)           # testing code -- stuff in tree
-    tree_have = [i for i in range(lo,hi) ]      # what we put in the tree
+    tree_have = [ i for i in range(lo,hi) ]     # what we put in the tree
 
     demo_visit(tree);
-    print('DEBUG: --\ntree_have:', tree_have, '\nvisit_have:', visit_have)
+    if 1: print('DEBUG: --\ntree_have:', tree_have, '\nvisit_have:', visit_have)
     assert tree_have == visit_have
 
     ## nice -- we can return the result and not squirrel it away in a global
     iter_have = demo_iter(tree); 
-    print('DEBUG: --\ntree_have:', tree_have, '\niter_have:', iter_have)
+    if 1: print('DEBUG: --\ntree_have:', tree_have, '\niter_have:', iter_have)
     assert tree_have == visit_have
 
 main()
