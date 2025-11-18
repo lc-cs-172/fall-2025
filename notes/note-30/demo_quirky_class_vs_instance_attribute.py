@@ -1,3 +1,15 @@
+"""
+Purpose: 
+
+This is a 'biology experiement' where we played with Python
+to determine what it does.
+
+This is ENRICHMENT -- you are not expected to know this code.
+
+This is primarily for my benefit, so I don't lead you astray.
+
+"""
+
 ##================================================================
 ## NB: There was something about this block below as a string
 ##     which REALLY messed up indent-region in Emacs python-mode.
@@ -10,12 +22,12 @@
 ##
 ##  Is this what I am seeing?
 ##
-##    n on class function, on assignment???
+##    - on class function, on assignment???
 ##    - on function object, on static analysis????
 ##
 ##  my head hurts ...
 
-    ## NB: We know that Python interns small integers.
+    ## NB: We know that Python interns [some? small?] integers.
     ##     We need to see when new objects get created.
     ##     Therefore, don't use small integers!!!
 
