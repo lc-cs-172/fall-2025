@@ -109,10 +109,10 @@ def demo_iter(tree):
 def build_subtree(lo,hi):
     "return balanced subtree build from integers [lo,hi)"
     """
-    KISS: This is test code -- with restricted uage --
+    KISS: This is test code -- with restricted usage --
     we 'know' we are building a full BST,
     so we just cleanly cut in half each time;
-    and yes, we assert this -- easy to do, important to do
+    and yes, we assert this pre-condition -- easy to do, important to do
     """
     if 1 == hi-lo:
         return Node(lo)
@@ -143,7 +143,6 @@ def main():
 
     ## nice -- we can return the result and not squirrel it away in a global
     iter_have = demo_iter(tree); 
-
     print('DEBUG: --\ntree_have:', tree_have, '\niter_have:', iter_have)
     assert tree_have == visit_have
 
