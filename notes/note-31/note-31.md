@@ -12,6 +12,11 @@
 * FYI: assignment #9 due today, Wed 19-Nov-2025
   - pair programming -- expect 30 min in-class today
 
+* NB: I made one small change to the assignment, and corrected a mistake --
+  lookup should return a tuple of (key,value) or None, not just the value or
+  None.  Otherwise, there's an ambiguity -- did lookup return None because there
+  was no matching key, or is None the value associated with the key?
+
 ## iterators
 
 ### BIG IDEA: function w/ state to return next item

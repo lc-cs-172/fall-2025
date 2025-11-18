@@ -6,12 +6,12 @@ search tree (a foundation for many wonderful algorithms).
 
 ## Submission Details
 
-Each assignment has two authors, one primary submission, and one secondary
-submission. Yes, two submissions, one each (to satisfy Google Classroom
-logistics).  The write-up is a single ASCII .txt file called
-bst_write-up.txt`.  Each write-up contains *brief* entries which
+Each assignment has two or more authors, one primary submission, and secondary
+submissions. Yes, multiple submissions, one each (to satisfy Google Classroom
+logistics).  The write-up is a single ASCII .txt file called `bst_write-up.txt`.
+Each write-up contains *brief* entries which
 
-* identify your paired programming partner
+* identify your programming partners
 * indicate the primary and secondary submitters
 * state how you used AI if at all
 * mention how you shared responsibilities
@@ -22,8 +22,7 @@ bst_write-up.txt`.  Each write-up contains *brief* entries which
   - minimum depth
 * describe what you learned
 
-The secondary submitter should be able to just submit the common
-write-up file.
+The secondary submitters should be able to just submit the common write-up file.
 
 You'll each get the same homework score based on the primary submission.
 
@@ -34,17 +33,17 @@ Create two Python files, `bst.py` and `bst_test.py`.
 In bst.py, use Python OOP to define BST classes `Tree` and `_Node`.
 The Tree needs to support
 
-|routine					| purpose									|
-|----						|----										|
-| insert(self, key, val)	| duplicate keys NOT allowed				|
-| lookup(self, key) -> val	| returns None if no such key				|
-| verify(self) -> bool		| verifies the integrity of the tree		|
-| visit(self, visitor)		| in-order visitor(key, val) for every item	|
-| `__init__`				| usual										|
-| `__repr__`				| usual										|
-| `__str__`					| usual										|
-| `__len__`					| more magic								|
-| `__iter__`				| lots more magic							|
+|routine						| purpose									|
+|----							|----										|
+| insert(self, key, val)		| duplicate keys NOT allowed				|
+| lookup(self, key) -> (k,v)	| returns None if no such key				|
+| verify(self) -> bool			| verifies the integrity of the tree		|
+| visit(self, visitor)			| in-order visitor(key, val) for every item	|
+| `__init__`					| usual										|
+| `__repr__`					| usual										|
+| `__str__`						| usual										|
+| `__len__`						| more magic								|
+| `__iter__`					| lots more magic							|
 
 In bst_test.py, create your unit tests called test_XYZ, where XYZ indicates what
 you're testing.  Make sure you test every function, including the iterator and
