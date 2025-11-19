@@ -13,11 +13,18 @@ print('\n==== Purpose: demo "simple" Python iterators ====')
 You are not responsible for knowing the details of this demo code.
 
 It is enrichment.  You need to be exposed, you need to know it exists,
-but you don't need to know it cold.  
+but you don't need to know it cold.  You can look it up.
 
 ================================================================
-You will be tested on iterators and yield.
-You won't be tested on the gory details of iter() and __next__().
+================================================================
+====     You WILL be tested on iterators and yield.    ====
+====     You WILL be tested on iterators and yield.    ====
+====     You WILL be tested on iterators and yield.    ====
+
+You WON'T be tested on the gory details of iter() and __next__().
+You WON'T be tested on the gory details of iter() and __next__().
+You WON'T be tested on the gory details of iter() and __next__().
+================================================================
 ================================================================
 
 You am not being trained as Python language lawyers
@@ -31,10 +38,10 @@ there are sentinels vs. exceptions to terminate iteration ...
 and there are functions that return functions,
 there are closures.
 
-Python is still growing and changing for almost 35 years.
-Python needs it.
+Python is still growing and changing after almost 35 years.
+Python needs these gory details.
 
-It's more than we need.  We'll stick to basics.
+It's more than we need.  We'll stick to the basics.
 
 """
 
