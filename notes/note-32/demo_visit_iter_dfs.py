@@ -58,14 +58,11 @@ class Node:
         else:
             return "Null"
 
+    ## simplified iterator using 'yield from' syntax
     def __iter__(self):
-        if self.left:
-            for node in iter(self.left):
-                yield node
+        if self.left: yield from iter(self.left)
         yield self
-        if self.right:
-            for node in iter(self.right):
-                yield node
+        if self.right: yield from iter(self.right)
 
     def walk(self, visitor):
         if self.left: self.left.walk(visitor)
