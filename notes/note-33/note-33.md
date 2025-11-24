@@ -25,7 +25,7 @@
 * exam topics  	Fri 05-Dec-2025
 * evaluation	Mon 08-Dec-2025
 * exam review	Wed 10-Dec-2025
-* exam given	Mon 15-Dec-2025	1-4 PM
+* exam given	Mon 15-Dec-2025	1:00-4:00 PM in Olin 305
 
 ### You can expect questions about the following to be on the final
 
