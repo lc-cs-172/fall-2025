@@ -124,6 +124,15 @@ def demo_iter(tree):
 ## DFS -- Depth First Search
 ##================================================================
 
+##==========================================================
+## NB: This is NOT the conventional definition of depth.
+##     We are counting the number of NODES, not edges,
+##     on the longest path from root to leaf.
+##=================================
+##     depth(<empty-tree>) == 0
+##     depth(<root-only>)  == 1
+##=================================
+
 def dfs_max_depth(tree):
     "return the maximum depth in the tree"
     return dfs_node_depth(tree._root, 1)

@@ -1,5 +1,6 @@
 print("""
-Purpose: demonstrate the recurring build by reference trap and how to avoid it
+Purpose: demonstrate the recurring build by reference
+trap and how to avoid it -- MAKE A COPY -- when needed.
 """)
 
 def spring_trap(wrap):

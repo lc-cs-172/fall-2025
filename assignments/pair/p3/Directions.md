@@ -75,7 +75,10 @@ You'll each get the same homework score based on the primary submission.
 Create two Python files, `simseg.py` and `simseg_test.py`.
 
 Use the Python module, `graphics`.
-You may need to pip3 install it.
+You may need to install it
+
+        python3 -m pip install graphics.py
+
 See also the small demo here (that we live coded in class)
 [demo_graphics.py ](demo_graphics.py)
 
