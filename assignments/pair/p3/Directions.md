@@ -58,10 +58,11 @@ logistics).  The write-up is a single ASCII .txt file called
 
 * identify your programming partners
 * indicate the primary and secondary submitters
+* indicate the number of rounds required to stabilize
 * state how you used AI if at all
 * mention how you shared responsibilities
 * describe the most difficult part of the assignment
-* describe the best and worst aspect working as a team
+* describe the best and worst aspects working as a team
 * provide a rough estimate of hours outside of class to complete
   (team total, not each member; if it was 7+6+5, state 18)
 * describe what you learned
@@ -95,7 +96,7 @@ submit your files.
   submit .png files of those initial configurations; configurations must include
   0. random (this is also part of the basic submission)
   1. checkerboard
-  2. random occupied vs. open tight pack ('urban vs. rural')
+  2. random occupied vs. open areas ('urban vs. rural')
   3. random *common* clumps of size k
      you choose one k, with 5 <= k <= 9
   4. you choose some other initial configuration method

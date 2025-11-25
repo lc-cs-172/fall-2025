@@ -49,7 +49,7 @@
   - final exam is MON 12/15/25 1:00P-4:00P
 
   - *in-class, pen and paper, closed-book*
-    + **open note**: one 3x5 index card
+    + **open note**: *one* 4x6 index card
 
   - we will review the topics on the final on Wed 12/10/25
 

@@ -70,11 +70,9 @@ def countdown_reset(start_at):
 
 def count_down():
     'Purpose: callable usable as an iterator -- counts down to 1, does not return 0'
-
     ##================================================================
     ## NB: This function deliberately has a bug.
     ##================================================================
-
     global countdown_counter
 
     if countdown_counter:
@@ -135,7 +133,6 @@ def demo_builtin_iter_alt():
             ## we expect an exception -- let us see if we got one
             lump = next(one_by_one)  
         else:
-
             ## show that sentinel is OK, and that is it ours, not the iterators
             sentinel = 'Q/ Is it legal to supply a new sentinel?'
             what_we_got = next(one_by_one, sentinel)
@@ -146,7 +143,6 @@ def demo_builtin_iter_alt():
             what_we_got = next(one_by_one, sentinel)
             if 1: print('DEBUG: what_we_got:', what_we_got)
             assert sentinel == what_we_got
-
     print('SUCCESS')
         
 if 1: demo_builtin_iter()
