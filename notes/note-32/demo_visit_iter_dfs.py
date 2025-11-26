@@ -152,7 +152,7 @@ TREE_RAND = 3
 import random
 
 def build_subtree(lo, hi, mode = TREE_BEST):
-    "return balanced subtree build from integers [lo,hi)"
+    "return subtree build from integers [lo,hi)"
     """
     KISS: This is test code -- with restricted usage --
     if we are building a balanced BST,
