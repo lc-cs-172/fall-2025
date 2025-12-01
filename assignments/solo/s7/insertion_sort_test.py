@@ -79,7 +79,7 @@ def test_important_math_constants():
     my_sort(have)
     assert have == want
     
-def test_best_asorted():
+def test_best_sorted():
     data = [0, 1, 2, 3, 4, 5, 6, 7]
     want = [0, 1, 2, 3, 4, 5, 6, 7]
     have = data.copy()

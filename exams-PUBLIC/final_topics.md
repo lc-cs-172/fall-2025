@@ -21,7 +21,7 @@ These are topics likely to be covered on the final exam.
 
 * sorting
 
-* object oriented programming
+* Python object oriented programming
   - dunder methods
   - iterators using yield
 

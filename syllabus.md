@@ -215,13 +215,17 @@ All assignments will be announced on Google Classroom, details will be posted on
 our class GitHub repo, and assignments are submitted through our Google
 Classroom.  Assignments are designed to help you master and apply what we are
 learning in class.  **Assignments are due on Friday at 11:59 PM of the week they
-are due.** Points will be taken off when submitted late -- the Late Policy below.
+are due.** Points will be taken off when submitted late -- see Late Policy
+below.
 
 Simple assignments are due in about a week.  More involved assignments will have
-about 2 weeks to complete.  We'll grade and return the assignment in about a
-week after it's due.
+about 2 weeks to complete.  Our goal is to grade and return assignments a week
+or two after they're turned in.  Note that we may delay returning assignments
+until are all graded to ensure uniform treatment.  Any assignment can be
+re-graded if warranted -- if you think the grade is unfair, let me know; note
+that your grade could go up or down, depending on what a review uncovers.
 
-Correctness and clarity are essential, both in programs and writeups.  Coding
+Correctness and clarity are essential, both in programs and write-ups.  Coding
 style matters.  A lot.  Names are especially important, so be sure to use Python
 [appropriate stylistic conventions](https://github.com/alainkaegi/pythonorama/blob/main/style/names.md).
 
@@ -248,7 +252,7 @@ not yet graded it, but you'll have to ask us to return it to you ungraded first.
 The files should adhere to these formatting standards:
 
         - keep program line length <= 120 characters
-        - keep writeup and output line length <=  80 characters
+        - keep write-up and output line length <=  80 characters
 		- use consistent indenting and whitespace
         - use Python specific stylistic conventions
         - prefer short focused functions that do one thing well

@@ -18,7 +18,6 @@
   - `Chance favors [only] the prepared mind.`
   - `-- Louis Pasteur --`
 * Slings and Arrows: CR vs NL, / vs \, tab 4 vs 8
-* Fortran IV did NOT support recursion
 * False Beta Shipment @NSC
 * Cooking the WDC books @MGC
 * Alto->Lisa->Mac
@@ -26,8 +25,6 @@
 * SPARC
 * Verilog Committee -- JDU && and reachin' out to REB
 * Unix into HP in Cupertino, 3COM
-* INTERCAL and esoteric programming languages
-* jprof
 
 ## Q & A -- Ask Me Anything ...
 
