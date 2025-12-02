@@ -8,7 +8,7 @@ def reload():
     """Emacs and Python on my Mac do not get along,
     so I use python3 -i to keep it simple.
     I edit the file in Emacs, then reload it back into Python.
-    To reload, we 'source' this file via read and exec.
+    To reload, we 'source' this file via read() and exec() below.
     """ 
     with open('demo_graphics.py', 'r') as f:
         script_code = f.read()
@@ -30,7 +30,7 @@ class TicTacToe:
 
     def __init__(self):
         row = [OPEN] * SIZE 
-        self.board = [ list(row) for _ in range(SIZE) ]
+        self.board = [ list(row) for _ in range(SIZE) ] # NB: we need to make each row independent, and avoid sharing
         self.win = None
         self.grid = None
         self.make_grid()
@@ -82,6 +82,18 @@ def main():
     place(game, 0,0,CROSS)
     place(game, 0,1,NAUGHT)
     place(game, 1,2,CROSS)
+    print("Hit Enter in the terminal to finish:", end='')
+    ignore = input()
 
-[]    
+if __name__ == '__main__':
+    main()
+    ## NB: for some reason, Python 3.11 on RHEL 8 using Emacs and Python-mode complains
+    ##        else:
+    ##        ^^^^
+    ##    SyntaxError: invalid syntax
+    ##
+    ##     but it works fine via python3 and reload() ... oh well ...
+else:
+    print("Enter main() in the terminal to draw the tic-tac-toe board.")
 
+[]

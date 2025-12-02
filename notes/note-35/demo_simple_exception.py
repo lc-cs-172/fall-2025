@@ -34,7 +34,7 @@ except StopIteration:
     print('Game Over, Thanks for Playing')
 
 
-if 1:
+if 0:
     lede("demo try/finally")
     try:
         drain(size+1)
