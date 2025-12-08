@@ -212,8 +212,8 @@ def dump_tree(node, width=96):
         side1 += padding
         side2 += padding
 
-        my_rest = [ half1 + half2 for (half1,half2) in zip(side1,side2) ]
-        return [my_line] + my_rest
+        below = [ half1 + half2 for (half1,half2) in zip(side1,side2) ]
+        return [my_line] + below
 
     else:        
         return [ fill + '[]' + fill ]

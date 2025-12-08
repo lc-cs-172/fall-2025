@@ -1,4 +1,11 @@
+Note that material on the final can come from *Pythonorama*, the *lecture
+notes*, and the *demo code* (that is not marked enrichment).
+
 These are topics likely to be covered on the final exam.
+
+* programming in Python
+
+* Types, Objects, and References
 
 * lists, tuples, and dicts
 
@@ -13,7 +20,7 @@ These are topics likely to be covered on the final exam.
 
 * control statements
 
-* Big Oh notation
+* Big O and Big Theta notation
 
 * recursion
 
@@ -29,11 +36,17 @@ These are topics likely to be covered on the final exam.
 
 * binary search trees
 
-* visit+visitor design pattern
+* visitor and iterator design patterns
 
 * depth first search
 
 * unit testing
+
+* managing resources like files
+
+* basic graph info
+
+* recurrence relations
 
 * extra credit
 

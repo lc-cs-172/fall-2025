@@ -4,7 +4,7 @@
 
 * please mark your attendance in Google Classroom for today
 * *draft* final exam topics posted (may be revised)
-  - [final exam topics](https://github.com/lc-cs-172/fall-2025/blob/main/exams-PUBLIC/final_topics.md)
+  - [final exam topics](../../exams-PUBLIC/final_topics.md)
 * new material you need to know
   -  source code management
   -  iteration redux

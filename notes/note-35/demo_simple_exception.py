@@ -39,10 +39,10 @@ if 0:
     try:
         drain(size+1)
     finally:
-        lede('finally fired, retains exception')
+        lede('\n***--->>> `finally` fired, but retains exception, so we get *INTENTIONAL* exception <<<---***\n')
 
 
-lede("NB: this *SHOULD* throw an uncaught exception")
+lede("\n***--->>> NB: *INTENTIONALLY* throws an uncaught exception <<<---***\n")
 drain(size+1)
 
 []        

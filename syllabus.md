@@ -221,7 +221,7 @@ below.
 Simple assignments are due in about a week.  More involved assignments will have
 about 2 weeks to complete.  Our goal is to grade and return assignments a week
 or two after they're turned in.  Note that we may delay returning assignments
-until are all graded to ensure uniform treatment.  Any assignment can be
+until all are graded to ensure uniform treatment.  Any assignment can be
 re-graded if warranted -- if you think the grade is unfair, let me know; note
 that your grade could go up or down, depending on what a review uncovers.
 
@@ -232,13 +232,13 @@ style matters.  A lot.  Names are especially important, so be sure to use Python
 I automate some of the grading, so please follow the
 directions with regard to file naming and file formats.
 
-In general, all the files you submit for assignments are text files, simple
+In general, most of the files you submit for assignments are text files, simple
 ASCII text files -- not Word documents, not Visual Studio code project files,
 just simple ASCII text files.  They must be in TEXT (not BINARY) format, and
-have the suffix `.txt`.  Python programs will have names like
-visit_every_element.py.txt and the program's output will go into files with
-names like visit_every_element.out.txt.
-[We hope this works; Google Classroom has quirks we're still working out.]
+usually have the suffix `.txt`.  Python programs will have names like
+visit_every_element.py and the program's output will go into files with names
+like visit_every_element.txt.  Graphs, if provided, should be in .png format,
+and have names like compare_sorts.png.
 
 Note that in Google Classroom, once an assignment is graded and returned, it
 can't be resubmitted.  And in fact, once you submit the assignment, you can't
@@ -312,7 +312,6 @@ The grade of `A` is earned by students who consistently do outstanding work and
 who show an unusually strong commitment to being active participants in the
 learning process.
 
-
 ## Grading Input
 
 There are multiple aspects to learning, and we weigh the following inputs to
@@ -325,7 +324,7 @@ policy if needed to improve effectiveness.
 * Exams: 							30 points
 * Extra Credit:						10 points
 
-Group programming assignments will be done in pairs.
+Group programming assignments will be done in pairs or trios.
 
 ### Extra Credit
 
@@ -358,7 +357,7 @@ Sources for exam questions include
   sections of relevant pages in
   [Pythonorama](https://github.com/alainkaegi/pythonorama#pythonorama).
 
-* applying what was taught in class or via the required reading
+* applying what was taught in class or in the required reading
 
 ## Helpful Tips
 

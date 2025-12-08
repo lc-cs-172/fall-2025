@@ -29,7 +29,7 @@
 
 ### You can expect questions about the following to be on the final
 
-  - visit design pattern
+  - visitor design pattern
   - iteration using yield
   - depth first search
 
