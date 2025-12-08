@@ -2,6 +2,7 @@
 
 ## Today's Hot Topics
 
+* administrivia
 * in-class student evaluations
 * recurrence relations review
 * problem hardness overview
@@ -14,12 +15,16 @@
 * Wed:	*last day of class* -- exam topics review
 * Fri: 	No Class -- Reading Period  
   - NB: last chance to turn in assignments: Fri 11:59 PM
+
+### final exam details
 * Mon: 	Final Exam 1-4 PM, Olin 305
   * pen-and-paper in-person sit-down final
   * single 4x6 index card with personal notes
   * no computers, no smart devices, no calculators
   - 20 questions, 5 points each
   -  1 extra credit worth 10 points
+
+## in-class student evaluations
 
 ## Recurrence Relations
 
