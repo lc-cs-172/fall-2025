@@ -1,53 +1,53 @@
-Note that material on the final can come from *Pythonorama*, the *lecture
-notes*, and the *demo code* (that is not marked enrichment).
+## Final Exam topic sources (non enrichment)
+* *Pythonorama*
+* *in-class lectures*
+* *lecture notes w/ demo code*
 
-These are topics likely to be covered on the final exam.
+### Final Exam topics
 
-* programming in Python
+* Python: Types, Objects, and References
 
-* Types, Objects, and References
+* Python: lists, tuples, and dicts
 
-* lists, tuples, and dicts
+* Python: global and local variables
 
-* global and local variables
-
-* what's the purpose of programming,  
+* CS: what's the purpose of programming,  
   and what are some best practices?
 
-* range and slice
+* Python: range and slice
 
-* list comprehension
+* Python: list comprehension
 
-* control statements
+* Python: control statements
 
-* Big O and Big Theta notation
+* CS: Big O and Big Theta notation
 
-* recursion
+* CS: recursion
 
-* searching
+* CS: searching
 
-* sorting
+* cs: sorting
 
-* Python object oriented programming
+* Python: object oriented programming
   - dunder methods
   - iterators using yield
 
-* linked lists
+* CS: linked lists
 
-* binary search trees
+* CS: binary search trees
 
-* visitor and iterator design patterns
+* CS: visitor and iterator design patterns
 
-* depth first search
+* CS: depth first search
 
-* unit testing
+* CS: unit testing
 
-* managing resources like files
+* Python: managing resources like files
 
-* basic graph info
+* CS: basic graph info
 
-* recurrence relations
+* CS: recurrence relations
 
-* extra credit
+* Open: extra credit
 
 []
