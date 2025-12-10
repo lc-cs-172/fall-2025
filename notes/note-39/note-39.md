@@ -12,7 +12,7 @@
 * today is our *last day of class*
   - I've learned a lot
   - I see you have too
-  - Thank you for being an integral part of our shared journey
+  - Thank you for being an integral part of our shared scholarship
 * Fri: 	No Class -- Reading Period
   - NB: I will have office hours Fri 9-10 AM -- come see me if you have questions
   - NB: last chance to turn in assignments: this Fri 11:59 PM
