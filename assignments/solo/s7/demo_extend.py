@@ -1,4 +1,9 @@
 print("""
+
+====================
+==== ENRICHMENT ====
+====================
+
 ==== demo extend need not be conditional ====
 [[ and slice values can be way whacky ]]
 """)

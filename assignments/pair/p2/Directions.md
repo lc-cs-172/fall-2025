@@ -16,7 +16,7 @@ Each write-up contains *brief* entries which
 * state how you used AI if at all
 * mention how you shared responsibilities
 * using a format akin to Pascal's Triangle, where the parent is centered above
-  the children, provide 2 examples of a BST layout with 7 keys in range(1,7),
+  the children, provide 2 examples of a BST layout with 7 keys in range(1,8),
   showing
   - maximum depth
   - minimum depth
