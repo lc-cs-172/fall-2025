@@ -1,0 +1,564 @@
+-*- mode: rst; fill-column: 80 -*-
+
+=========================
+ '9966d1a2'
+=========================
+
+Grand Total
+===========
++85     baseline
++10     extra credit
+===
+=95     total
+
+----------------------------------------------------------------
+
+baseline
+--------
+
++15/20  solid submit    duplicate files: merge_sort_test.txt, plot_comparision.py
+                        which one is the 'right' version?
+
++40/50  clean code
+
+                your hybrid_merge.py code is particularly lovely -- good
+                formatting, good comments, good use of named variables
+
+                merge_sort is quite clean code, but is missing comments
+
+                The code for insertion sort has no comments, and it has the
+                "do nothing but take up time" nested loops
+
+                    sweep = range(len(data))
+                    for i in sweep:
+                        for j in sweep:
+                            pass
+
+                left over from solo/s7
+                    ## burn some time to give pytest something to report
+                which throws off the time taken, making comparisions bogus
+
+                in plot_comparision, the purpose of sizes is not clear,
+                and it's obscured by using 'n' --  better would be
+
+                    for size in sizes:
+
+    other comments
+
+                These small sizes are much too small for a meaningful comparision
+                        sizes = [1, 3, 5, 7, 9, 11]
+                note how the total time take is in the microsecond range
+                -- and for the hybrid sort, being below the 32 threshold,
+                it would only do the insertion sort
+
+                plot_comparision.py (2nd version) is particularly clean code
+                (other than `for n in sizes` -- better `for size in sizes`),
+                with a great helper routine `time_sort`
+
++30/30 accurate answer
+
+    If the data is random, then yes, merge_sort is better than insertion_sort --
+    but if the data were already sorted, insertion_sort would win every time.
+
+    To ensure accuracy of the benchmarked numbers, you also need to have an
+    otherwise quiet machine -- just same machine, framework, and data doesn't do
+    it -- but running it muliple times (which you did) and looking at the values
+    is very helpful.
+
+===
+=85     baseline
+
+----------------------------------------------------------------
+
+
+justify timing accurate         (3)
+-----------------------------------
++ 2
+
+
+plot comparing runtimes         (4)
+-----------------------------------
++ 4
+
+
+hybrid sort implementation      (6)
+-----------------------------------
++ 4
+        It's hard to see the difference on the plot runtime_comparison2.png
+        between merge-sort and hybrid-sort -- do they really have such similar
+        runtimes?  [When I do it, I always see a 5 to 15% improvement, if I set
+        the threshold correctly.]
+
+stable sort verifier            (7)
+-----------------------------------
++ 0
+
+====
+=10     extra credit
+
+Nice attempt at solution with a solid writeup.  Yes, both algorithms, IF
+IMPLEMENTED CORRECTLY, are known to be stable -- but the verifier is to
+check if they were implemented correctly.  It's easy to implement them
+incorrectly.
+
+Note that it would be much better if you documented the verify code in
+the code itself -- *why* does it work?
+
+It would have been good to show the output of the test code.
+
+Also, the test is not self-checking -- an assert would be better -- the
+verification code requires manual checking.
+
+It's almost always good to make sure your error detection code works --
+to check both positive and negative results -- you only checked for
+success.  It's not uncommon for the detector itself to fail, both in
+detecting the problem, and in reporting it correctly.
+
+If you had checked for failure (that is, verified the verifier), you
+could have found something like this:
+
+   assert not verify_stable_sort(selection_sort), 'selection_sort is not stable'
+AssertionError: selection_sort is not stable
+
+It turns out your detector does not work.  The dataset you provided will
+always result in a stable sort, because the 2nd value, the position, is
+considered as part of the sort key by Python, so it will always preserve
+relative order of equal keys.
+
+================================================================
+
+=========================
+ '77e22654'
+=========================
+
+Grand Total
+===========
+ 100    baseline
+  12    extra credit
+ ===
+=112    total
+
+baseline
+--------
++20/20  solid submit
++50/50  clean code
+
+    FYI, no need to make extend conditional -- OK to extend w/ empty sequence
+
+    if i < len(left):
+        merged.extend(left[i:])
+    if j < len(right):
+        merged.extend(right[j:])
+
++30/30  accurate answer
+====
+=100
+
+Another note
+----------------
+
+    Nice use of using import to select the sort that you used in the large test cases.
+
+
+A note about your private comment
+---------------------------------
+
+    You wrote
+
+        the relative comparison between them remains fair (both results are
+        equally ``bumped.'')
+
+    but the size of the bump can make the comparision unfair.
+    Let A take 10 units and B take 5 units.  B is 50% faster.
+    But mix in C of 10 to both, and you compare 20 with 15
+    -- now, B is only 25% faster.
+
+
+justify timing accurate         (3)
+-----------------------------------
++3      excellent, used multiple trials to assess consistency, indicating accuracy,
+        and using medians to mitigate against outliers and provide a robust measure!
+
+
+plot comparing runtimes         (4)
+-----------------------------------
++3      I really appreciate the clarity of your writeup -- how you describe what
+        you did, and the files with the results -- makes it very easy to
+        understand and enjoy what you did.
+
+        The plots themselves are good, but would be better with a title, and a
+        legend for sort_runtimes_over_runs.png (How do we know, from looking at
+        the graphs, which line goes with which sort?  We know from context, but
+        not from the graph itself.)
+
+        Nice job labeling the axes, by the way.  And I like the clarity of the
+        comments in the plot_sort_runtimes.py file.
+
+
+hybrid sort implementation      (6)
+-----------------------------------
++6      wonderful -- yes, I see between 5 and 15% improvement, depending, and my
+        sweet spot was more like 20, but sure, you're milage may vary ;-)
+
+        It would have been better to make the cutover a manifest constant at the
+        top of the file, rather than bury it in the code as k=32
+
+===
+=12
+
+================================================================
+
+=========================
+ 'f798c1a5'
+=========================
+
+Grand Total
+===========
++95     baseline
++ 0     extra credit
+ ===
+=95
+
+baseline
+--------
++20/20  solid submit
++50/50  clean code
++25/30  accurate answer
+        (answer affected by "justify timing accurate" issues raised below)
+ ===
+=95
+
+justify timing accurate         (3)
+-----------------------------------
++  0    The justification doesn't really hold -- there is noise in real-world
+        experiments, you ran and used the output from a single run -- sure, it
+        had 14 tests, but that didn't alone didn't make it accurate -- the one
+        run was what was measured, and what was used -- how do you know the one
+        run was reliable?
+
+        In general, you should have run it at least 3 times to see how noisy the
+        runs are, and then take the middle value ('median') if the numbers are
+        all pretty close together.  If the numbers are spread out, you may need
+        to run more experiments to get a better estimate.
+
+        Also, insertion sort is O(n^2) worst case, but if the input were sorted,
+        it's only O(n).  Also, constants matter -- **if** insertion sort took
+        (n^2/4) for our random data, but merge sort took (16 n lg(n)), then
+        insertion sort is FASTER until n gets to about 512 (589, actually).  So
+        no, the "bigger" order like O(n^2) is not always greater than the smaller
+        order like O(n lg(n)).
+
+plot comparing runtimes         (4)
+-----------------------------------
+n/a
+
+hybrid sort implementation      (6)
+-----------------------------------
+n/a
+
+stable sort verifier            (7)
+-----------------------------------
+n/a
+
+================================================================
+
+=========================
+ 'bad9b958'
+=========================
+
+Grand Total
+===========
++85     baseline
++ 6     extra credit
+ ===
+=91
+
+baseline
+--------
++20/20  solid submit            OK, but it would have been nice to have the plotting code
++35/50  clean code              see notes in hybrid sort -- discovered issues w/ merge
+                                    modifying the input data: cost 10
+                                    having merge be quadratic: cost 5
++30/30  accurate answer         I see you rendered what you saw ...
+                                    but note the extra credit analysis (see below) was wrong
+ ---
+=85
+
+Notes: it would have been better to strip out counting the comparisons and
+shifts in the insertion code, but literally, I said use your old code, so my
+bad.  The old code didn't have that much in the way of comments either, but so
+be it.
+
+FYI, I was seeing about 10X, not 5X, difference comparing the run times for the
+tests from pytest.  If I strip out all the overhead of the tests, and just
+compare sorting 5e3 numbers, I see a benefit between 55x and 85X, depending on
+platform.
+
+
+justify timing accurate         (3)
+-----------------------------------
++ 1
+
+While what you wrote is true:
+
+    Merge sort is an O(nlog(n)) algorithm, and insertion sort is an O(n^2)
+    algorithm. Since nlog(n) is much less than n^2 as n gets large, we expect
+    merge sort to be more efficient.
+
+But constants matter. In fact,
+
+    Insertion sort is O(n^2) *worst* case, but if the input were sorted, it's
+    only O(n).  Also, constants matter -- **if** insertion sort took (n^2/4) for
+    our random data, but merge sort took (16 n lg(n)), then insertion sort is
+    FASTER until n gets to about 512 (589, actually).  So no, the "bigger" order
+    like O(n^2) is not always greater than the smaller order like O(n lg(n)).
+
+You wrote
+
+    Since insertion sort is O(n^2) and it took 880ms to run, we have that n is
+    approximately 29.66. Plugging this in for n in the expression nlog(n), we
+    get roughly 145. In other words, we expect merge sort to take roughly 145ms
+    to complete the tests.
+
+But this analysis is mistaken -- O(n^2) does not mean n^2, and likewise for n
+log(n) -- our actual equations could be n^2/4 and 16 n lg(n), as mentioned
+above.
+
+We note that log(n) was intended as log_2(n) == lg(n) in that analysis -- the
+numbers did not match the stated equation -- log(n) is not lg(n)
+
+plot comparing runtimes         (4)
+-----------------------------------
++ 1
+
+Extra credit task was to compare merge_sort with insertion_sort -- extra extra
+credit was to do the hybrid sort.  I don't see any such graph (nor the code to
+create it) for merge_sort vs. insertion_sort.
+
+You wrote
+
+    Note: I also attached a graph of the runtime of merge sort and hybrid sort
+    for various large lists for extra credit. The graph shows what we would
+    expect for both: a log-linear curve.
+
+But what is there is actually a great deal more like an O(n^2) curve, and not an
+O(n lg(n)) curve.  Something is off ... see
+[demo_various_curves.py](demo_various_curves.py)
+
+hybrid sort implementation      (6)
+-----------------------------------
++ 4
+
+Questions about hybrid sort
+
+Q/ How did you set the crossover?
+
+Q/ Why aren't you seeing any improvement in the graphs?  I was seeing 5 to 15
+percent when I did it ...
+
+Detailed discussion
+
+I think your cutover at hard coded constant 10 (better to use manifest
+constants) is the likely culprit -- it is smaller than what I found worked best
+for my code -- and there is that extra counting overhead in insertion sort,
+making it somewhat more expensive and therefore of less value.
+
+NB: In your merge pass, you are making repeated shifts (and copies) with the
+assignment like list_1[:] = list_1[1:], which is quite slow -- this is not
+really O(n) to do the merge, it's O(n^2), with all the extra shifts.  Much much
+better would be to move a pointer along, rather than shift all the elements
+down.
+
+There is this important issue w/ Python -- that slices make copies, which we
+talked about in class. See note-22, and the demo code,
+demo_slice_makes_object.py, from # LC-CS-172 Topics for Wed 29-Oct-2025.  But
+you turned in this assignment on the 27th, so you didn't know about the copies
+--- but it was certainly an actual shift which was repeated inside the loop,
+making merge O(n^2).  Maybe the relative timing should have looked off to you to
+suggest you investigate.
+
+By the way, below is the relative cost I saw when I isolated and compared your
+ALT_merge (w/ slices) with my JPS_merge (w/ indexing), for merging elements into
+one list of len size.  Notice how the ALT cost goes up by a factor of about 4
+when we double the size, and about 2X when we bump by 50% -- quadratic behavior
+indeed!
+
+FYI: Technically there's effects from both the shift operation and slice-based
+new object generation.  Both are quadratic; both are bad ;-) But the extra
+object creation bumps the cost by ~25X over just doing a pop causing a shift. If
+you index to avoid any shift, it's 2X-10X faster than a pop, 36X-358X faster
+than slice. That's right -- over 300 times faster. And Python run times always
+vary weirdly and wildly for me.  I used sizes 10K, 20K, and 30K to compare.
+
+==== demo cost of Python slice ====
+
+trial 0 tag JPS size 10000 used 0.007445988245308399
+trial 1 tag JPS size 10000 used 0.006641346961259842
+trial 2 tag JPS size 10000 used 0.005556168034672737
+trial 3 tag JPS size 10000 used 0.004936707206070423
+trial 4 tag JPS size 10000 used 0.004031387157738209
+
+trial 0 tag ALT size 10000 used 0.2686255853623152
+trial 1 tag ALT size 10000 used 0.2528315391391516
+trial 2 tag ALT size 10000 used 0.2554132919758558
+trial 3 tag ALT size 10000 used 0.2524266066029668
+trial 4 tag ALT size 10000 used 0.25226810947060585
+
+trial 0 tag JPS size 20000 used 0.005559480749070644
+trial 1 tag JPS size 20000 used 0.005463495850563049
+trial 2 tag JPS size 20000 used 0.004576548933982849
+trial 3 tag JPS size 20000 used 0.004212783649563789
+trial 4 tag JPS size 20000 used 0.003984348848462105
+
+trial 0 tag ALT size 20000 used 1.180714599788189
+trial 1 tag ALT size 20000 used 1.1719297552481294
+trial 2 tag ALT size 20000 used 1.1624515149742365
+trial 3 tag ALT size 20000 used 1.1669245744124055
+trial 4 tag ALT size 20000 used 1.1747763585299253
+
+trial 0 tag JPS size 30000 used 0.0059152627363801
+trial 1 tag JPS size 30000 used 0.006190295331180096
+trial 2 tag JPS size 30000 used 0.00577843002974987
+trial 3 tag JPS size 30000 used 0.005738819949328899
+trial 4 tag JPS size 30000 used 0.005749805830419064
+
+trial 0 tag ALT size 30000 used 2.797495632432401
+trial 1 tag ALT size 30000 used 3.029994617216289
+trial 2 tag ALT size 30000 used 2.8356526317074895
+trial 3 tag ALT size 30000 used 2.8375404570251703
+trial 4 tag ALT size 30000 used 2.811255583539605
+
+Worse, ALT_merge modifies the incoming runs!  It is changing the incoming data,
+which should be readonly -- it made my initial testcase to compare merge costs
+fail miserably -- the repeated runs (without making copies) merged nearly empty
+lists!
+
+
+stable sort verifier            (7)
+-----------------------------------
+n/a
+
+================================================================
+
+=========================
+ 'c5b08193'
+=========================
+
+Grand Total
+===========
++90     baseline
++ 1     extra credit
+ ===
+=91
+
+baseline
+--------
++13/20  solid submit    The writeup line length is excessive
+                        (Maximum line length: 131 at line 18)
+                        and the filename is assingment_write_up.txt,
+                        when it should be `assignment_write-up.txt`
++47/50  clean code
+
+                        Re: insertion sort -- issues cost 5
+
+                            has a nice inner loop, but without much in the way
+                            of comments for the unhelpful names i and j
+
+                            there is a stale and misleading comment:
+
+                                ## burn some time to give pytest something to report
+
+                            it is not a good idea to make the assignment
+                            conditional -- it costs more than it saves
+
+                        Re: merge sort -- small issues (-3), but BEAUTIFUL code (+5) == +2
+
+                            comment
+
+                                return  # in-place sort returns None
+
+                            is not that helpful -- does not explain WHY
+                            returning "early"
+
+                            understanding how i, j, and k are used though took
+                            some analysis -- a comment would have been helpful
+                            there
+
+                            You merge code is particularly beautiful -- elegant,
+                            simple, clear, efficient, minimal extra copies
+
++30/30  accurate answer
+ ---
+=90
+
+                        Re: write-up ... You wrote
+
+                            b) Maintained stability through out
+                            c) Followed the required in place and O(n lg n)/ O(n^2)
+                               complexity behaviour
+
+                        but how do you KNOW the sort was STABLE?
+                        but how do you KNOW it followed those order statistics?
+
+                        A single data point for comparision does not prove that one sort
+                        is better than the other when n gets large.
+
+                        In fact, insertion sort is O(n^2) *worst* case, but if the input
+                        were sorted, it's only O(n). Also, constants matter -- **if**
+                        insertion sort took (n^2/4) for our random data, but merge sort
+                        took (16 n lg(n)), then insertion sort, with larger order
+                        statistic, is FASTER until n gets to about 512 (589, actually).
+                        So no, the "bigger" order like O(n^2) is not always greater than
+                        the smaller order like O(n lg(n)).
+
+                        You wrote
+
+                            [the] envrionment in which these two are being run is the
+                            same. Another reasons is that there is stable results across
+                            multiple runs. Correct algorithmic behaviour is another
+                            reasons, since all of our tests passed the pytest timing data
+                            reflects real sorting work and all steps which amounted to
+                            the time taken.
+
+                        How do we know the environment was the same, and there
+                        was no system background tasks, software update checks,
+                        routine maintenance, other things running?
+
+                        How do we know the results were stable across multiple runs?
+                        There's no evidence for that, as far as I can tell.
+
+                        How does correct outcome ('algorithmic behavior') indicate the
+                        results are accurate?  We could have used bubble sort, and the
+                        algorithmic output would have been the same.
+
+                        How do you know the test reflects real sorting work?  There is
+                        overhead in running the test -- how do you know the overhead did
+                        not distort the accuracy of the comparison?
+
+                        Let A take 10 units and B take 5 units of time.  B is
+                        50% faster.  But mix in C of 10 to both, and you compare
+                        20 with 15 -- now, B is only 25% faster.
+
+
+justify timing accurate         (3)
+-----------------------------------
++ 1 -- the evidence and analysis provide partial credit -- see commentary above
+
+plot comparing runtimes         (4)
+-----------------------------------
+n/a
+
+hybrid sort implementation      (6)
+-----------------------------------
+n/a
+
+stable sort verifier            (7)
+-----------------------------------
+n/a
+
+===
++ 1
+
+================================================================
+
+[]

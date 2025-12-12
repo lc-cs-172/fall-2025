@@ -1,0 +1,31 @@
+Subject: Helpful commentary on  Assignment #8: Recursive Merge-Sort
+
+Hello LC-CS-172-Fall-2025,
+
+You may wonder why grading takes so long ... in part, it's because we
+try to give uniform, detailed, and constructive feedback.  That takes a
+lot of time.
+
+I recently finished grading the remaining #8 assignments -- I score the
+extra credit portions (and look over the entire submission) myself --
+and I found the feedback I was offering to the submitters was helpful
+for all of you.
+
+All of the personally identifiable information has been removed, so
+it's safe to share this feedback with the entire class, and the public
+-- our class github repo (but not Google Classroom of Group) is public.
+
+Yes, this commentary is a bit episodic, with repetition.  But yes, there
+is valuable how-to-program, how-to-communicate, how-to-submit-good-work
+advice in here.
+
+I've also included some of the demo programs I worked up to make my
+points in the feedback; most are enrichment, some are reinforcement for
+what you should already know, none of this new demo code has new
+material that will be needed the final.
+
+I'm publishing this commentary and code to share with you things I think
+you should know and that I hope you'll take with you from CS-172 as you
+continue your journey.
+
+Best,  /Joseph
