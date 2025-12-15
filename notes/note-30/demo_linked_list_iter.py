@@ -12,7 +12,7 @@ class Item:
 
     def __init__(self, data):
         self.data = data
-        # verify self.next auto-initialized to None
+        # verify self.next is None -- it inherits from the class attribute
         assert self.next is None
 
     def __repr__(self):
