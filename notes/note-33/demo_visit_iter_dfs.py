@@ -121,6 +121,7 @@ def demo_iter(tree):
 ## DFS -- Depth First Search
 ##================================================================
 
+## ==== CAUTION ==== CAUTION ==== CAUTION ==== CAUTION ==== 
 ##==========================================================
 ## NB: This is NOT the conventional definition of depth.
 ##     We are counting the number of NODES, not edges,
@@ -129,6 +130,7 @@ def demo_iter(tree):
 ##     depth(<empty-tree>) == 0
 ##     depth(<root-only>)  == 1
 ##=================================
+## ==== CAUTION ==== CAUTION ==== CAUTION ==== CAUTION ==== 
 
 def dfs_max_depth(tree):
     "return the maximum depth in the tree"
@@ -139,6 +141,24 @@ def dfs_node_depth(node, depth):
     left = dfs_node_depth(node.left, depth+1)
     right = dfs_node_depth(node.right, depth+1)
     return max(depth, left, right)
+
+def dfs_avg_depth(tree):
+    "return the average node depth in the tree"
+    count = 0
+    total = 0
+    def dfs_node_probe(node, depth):
+        nonlocal count, total
+        if not node: return
+        count += 1
+        total += depth
+        if 0: print(f'DEBUG: dfs_node_probe: {node=} {count=} {total=}')
+        dfs_node_probe(node.left, depth+1)
+        dfs_node_probe(node.right, depth+1)
+    dfs_node_probe(tree._root, 1)
+    average = None
+    if count: average = total/count
+    if 1: print(f'DEBUG: dfs_avg_depth: {count=} {total=} {average=}')
+    return average
 
 ##================================================================
 
@@ -233,6 +253,11 @@ def main():
     tree_have = [ i for i in range(lo,hi) ] # what we put in the tree
 
     tree = Tree()                        # working tree we muck with 
+
+    tree._root = build_subtree(lo,hi, TREE_SKEW)    # testing code -- stuff in tree
+    print_tree_dump(dump_tree(tree._root))
+
+
     tree._root = build_subtree(lo,hi)    # testing code -- stuff in tree
     print_tree_dump(dump_tree(tree._root))
 
@@ -251,22 +276,38 @@ def main():
     assert tree_have == iter_have
 
     ## bonus: show how dfs works
+
+    tree._root = build_subtree(lo,hi,TREE_BEST)    # testing code -- stuff in new tree
     depth = dfs_max_depth(tree)
     if 1: print('DEBUG: dfs_max_depth(BEST_tree):', depth)
     assert 4 == depth
 
-    ## bonus: show how dfs works
     tree._root = build_subtree(lo,hi,TREE_VINE)    # testing code -- stuff in new tree
     depth = dfs_max_depth(tree)
     if 1: print('DEBUG: dfs_max_depth(VINE_tree):', depth)
     assert 15 == depth
 
-    ## bonus: show how dfs works
     tree._root = build_subtree(lo,hi,TREE_SKEW)    # testing code -- stuff in new tree
-    print_tree_dump(dump_tree(tree._root))
     depth = dfs_max_depth(tree)
     if 1: print('DEBUG: dfs_max_depth(SKEW_tree):', depth)
     assert 5 == depth
+
+    print('==== doing average depth ====')
+
+    tree._root = build_subtree(lo,hi,TREE_BEST)    # testing code -- stuff in new tree
+    result = dfs_avg_depth(tree)
+    if 1: print('DEBUG: dfs_avg_depth(BEST_tree):', result)
+    assert (49/15) == result
+
+    tree._root = build_subtree(lo,hi,TREE_VINE)    # testing code -- stuff in new tree
+    result = dfs_avg_depth(tree)
+    if 1: print('DEBUG: dfs_avg_depth(VINE_tree):', result)
+    assert (120/15) == result
+
+    tree._root = build_subtree(lo,hi,TREE_SKEW)    # testing code -- stuff in new tree
+    result = dfs_avg_depth(tree)
+    if 1: print('DEBUG: dfs_avg_depth(SKEW_tree):', result)
+    assert (51/15) == result
 
 main()
 

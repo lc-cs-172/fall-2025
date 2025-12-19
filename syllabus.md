@@ -154,9 +154,15 @@ assignments, explicitly forbid you to use some specific features of Python.
 
 ## AI policy
 
-We're here to learn what works, how and why it works.  We're not here to
-cut-and-paste some cookbook or AI generated solutions.  AI is allowed as a
-resource.  Like any resource, it must be credited if used in your work.
+We're here to learn what works, how and why it works, in theory and practice.
+We're not here to cut-and-paste some cookbook or AI generated solutions.  AI is
+allowed as a resource.  Like any resource, it must be credited if used in your
+work, even if only as a reference.
+
+You're encouraged to do research.  You're expected to deepen and cement your
+understanding.  But I will deduct points if I see advanced techniques not taught
+or referenced which are not credited.  In part, I need to assess your progress
+and know if you figured it out on your own, or found the answer doing a search.
 
 AI generated answers or code are **not acceptable** as *your* work in this
 course -- all the work you turn in must be of your own creation, with clear
@@ -328,7 +334,7 @@ Group programming assignments will be done in pairs or trios.
 
 ### Extra Credit
 
-Most assignments will have extra credit portions, clearly identified.  
+Most assignments and exams will have extra credit portions, clearly identified.  
 It's extra credit -- you don't need to do it.  
 It's extra effort -- for both of us.  
 To keep the effort manageable, it's a package deal with modest feedback.  
@@ -344,6 +350,11 @@ comprehensive.
 
 Most exams are closed-book pen-and-paper tests given in the classroom -- No
 calculators, no smart phones or watches, no computers or tablets, no notes.
+
+In many cases (but not the final exam), students will be allowed to submit an
+addendum to a graded exam for any question they missed, and provide the *what*
+(the right answer) and the **why** (a justification).  They will be eligible for
+partial credit, up to 1/2 of the missed value for each question.
 
 Sources for exam questions include
 
